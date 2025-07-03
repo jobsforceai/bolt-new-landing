@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import RotatingText from "./bitsAnimation";
 const HomeComponent = () => {
   return (
-    <div className="flex px-16 flex-col lg:flex-row items-center justify-between">
+    <div className="flex flex-col lg:flex-row items-center justify-between max-w-7xl mx-auto px-6 mb-12">
       {/* <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center max-w-6xl mx-auto mb-20">
             
