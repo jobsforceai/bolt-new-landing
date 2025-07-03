@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from 'react';
-import { Outlet, Link, useLocation } from 'react-router-dom';
-import { Menu, X, Sparkles, Rocket } from 'lucide-react';
+import React, { useState, useEffect } from "react";
+import { Outlet, Link, useLocation } from "react-router-dom";
+import { Menu, X, Sparkles, Rocket } from "lucide-react";
 
 const Layout = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,8 +11,8 @@ const Layout = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   useEffect(() => {
@@ -20,20 +20,22 @@ const Layout = () => {
   }, [location]);
 
   const navItems = [
-    { name: 'Home', path: '/' },
-    { name: 'Features', path: '/features' },
-    { name: 'Pricing', path: '/pricing' },
-    { name: 'Careers', path: '/careers' },
+    { name: "Home", path: "/" },
+    { name: "Features", path: "/features" },
+    { name: "Pricing", path: "/pricing" },
+    { name: "Careers", path: "/careers" },
   ];
 
   return (
     <div className="min-h-screen bg-white relative">
       {/* Enhanced Header */}
-      <header className={`fixed top-0 w-full z-50 transition-all duration-500 ${
-        isScrolled 
-          ? 'bg-white/95 backdrop-blur-xl border-b border-gray-100 shadow-lg' 
-          : 'bg-transparent'
-      }`}>
+      <header
+        className={`fixed top-0 w-full z-50 transition-all duration-500 ${
+          isScrolled
+            ? "bg-white/95 backdrop-blur-xl border-b border-gray-100 shadow-lg"
+            : "bg-transparent"
+        }`}
+      >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
@@ -48,7 +50,9 @@ const Layout = () => {
                 <div className="text-2xl font-bold text-gray-900 group-hover:text-[#0595f6] transition-colors">
                   JobsForce.ai
                 </div>
-                <div className="text-xs text-gray-500 font-medium">AI-Powered Career Success</div>
+                <div className="text-xs text-gray-500 font-medium">
+                  AI-Powered Career Success
+                </div>
               </div>
             </Link>
 
@@ -60,8 +64,8 @@ const Layout = () => {
                   to={item.path}
                   className={`relative px-4 py-2 rounded-full font-semibold transition-all duration-300 hover:scale-105 ${
                     location.pathname === item.path
-                      ? 'text-[#0595f6] bg-[#0595f6]/10'
-                      : 'text-gray-700 hover:text-[#0595f6] hover:bg-[#0595f6]/5'
+                      ? "text-[#0595f6] bg-[#0595f6]/10"
+                      : "text-gray-700 hover:text-[#0595f6] hover:bg-[#0595f6]/5"
                   }`}
                 >
                   {item.name}
@@ -72,7 +76,7 @@ const Layout = () => {
               ))}
               <Link
                 to="/#waitlist"
-                className="bg-gradient-to-r from-[#0595f6] to-blue-500 text-white px-8 py-3 rounded-full hover:shadow-xl transition-all duration-300 hover:scale-105 font-semibold flex items-center gap-2 group"
+                className="bg-gradient-to-r from-[#0595f6]/95 to-blue-500/95 text-white px-8 py-3 rounded-full hover:shadow-xl transition-all duration-300 hover:from-[#0595f6] hover:to-blue-500 font-semibold flex items-center gap-2 group"
               >
                 <Rocket size={18} />
                 Join Waitlist
@@ -95,11 +99,13 @@ const Layout = () => {
         </div>
 
         {/* Enhanced Mobile Menu */}
-        <div className={`lg:hidden transition-all duration-500 ease-in-out ${
-          isMenuOpen 
-            ? 'max-h-screen opacity-100 visible' 
-            : 'max-h-0 opacity-0 invisible'
-        }`}>
+        <div
+          className={`lg:hidden transition-all duration-500 ease-in-out ${
+            isMenuOpen
+              ? "max-h-screen opacity-100 visible"
+              : "max-h-0 opacity-0 invisible"
+          }`}
+        >
           <div className="bg-white/95 backdrop-blur-xl border-t border-gray-100 shadow-2xl">
             <div className="max-w-7xl mx-auto px-4 py-6">
               <nav className="space-y-4">
@@ -109,8 +115,8 @@ const Layout = () => {
                     to={item.path}
                     className={`block px-6 py-4 rounded-2xl font-semibold transition-all duration-300 hover:scale-105 transform ${
                       location.pathname === item.path
-                        ? 'text-[#0595f6] bg-gradient-to-r from-[#0595f6]/10 to-blue-500/10 border border-[#0595f6]/20'
-                        : 'text-gray-700 hover:text-[#0595f6] hover:bg-[#0595f6]/5'
+                        ? "text-[#0595f6] bg-gradient-to-r from-[#0595f6]/10 to-blue-500/10 border border-[#0595f6]/20"
+                        : "text-gray-700 hover:text-[#0595f6] hover:bg-[#0595f6]/5"
                     }`}
                     style={{ animationDelay: `${index * 100}ms` }}
                   >
@@ -134,8 +140,8 @@ const Layout = () => {
 
       {/* Main Content */}
       <main className="relative">
-        <div className="fixed w-[25rem] h-[25rem] rounded-full bg-[hsl(256,100%,78%)] blur-[250px] bottom-0 -translate-x-1/3 -translate-y-1/2 right-0"></div>
-        <div className="fixed w-[25rem] h-[25rem] rounded-full bg-[#41E2FF] blur-[250px] bottom-0 translate-x-1/3 translate-y-1/2 right-0"></div>
+        <div className="fixed w-[25rem] h-[25rem] pointer-events-none rounded-full bg-[hsl(256,100%,78%)] blur-[250px] bottom-0 -translate-x-1/3 -translate-y-1/2 right-0"></div>
+        <div className="fixed w-[25rem] h-[25rem] pointer-events-none rounded-full bg-[#41E2FF] blur-[250px] bottom-0 translate-x-1/3 translate-y-1/2 right-0"></div>
         {/* <div className="fixed w-[25rem] h-[25rem] rounded-full bg-[#0595f6] blur-[200px] top-20 -translate-x-1/3 -translate-y-1/2 left-0"></div> */}
         <Outlet />
       </main>
@@ -144,7 +150,7 @@ const Layout = () => {
       <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white py-20 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-[#0595f6]/5 to-blue-500/5"></div>
         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#0595f6] to-blue-500"></div>
-        
+
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="grid md:grid-cols-4 gap-12 mb-12">
             <div className="md:col-span-2">
@@ -154,49 +160,127 @@ const Layout = () => {
                 </div>
                 <div>
                   <div className="text-2xl font-bold">JobsForce.ai</div>
-                  <div className="text-sm text-gray-400">AI-Powered Career Success</div>
+                  <div className="text-sm text-gray-400">
+                    AI-Powered Career Success
+                  </div>
                 </div>
               </div>
               <p className="text-gray-400 text-lg leading-relaxed mb-8 max-w-md">
-                Revolutionizing job searches worldwide with cutting-edge AI automation 
-                and expert human guidance. Your career success is our mission.
+                Revolutionizing job searches worldwide with cutting-edge AI
+                automation and expert human guidance. Your career success is our
+                mission.
               </p>
               <div className="flex items-center gap-4 p-4 bg-white/5 rounded-2xl backdrop-blur-sm border border-white/10">
                 <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                <span className="text-gray-300">Currently serving 5,000+ professionals</span>
+                <span className="text-gray-300">
+                  Currently serving 5,000+ professionals
+                </span>
               </div>
             </div>
-            
+
             <div>
-              <h4 className="font-bold text-xl mb-6 text-[#0595f6]">Solutions</h4>
+              <h4 className="font-bold text-xl mb-6 text-[#0595f6]">
+                Solutions
+              </h4>
               <ul className="space-y-4 text-gray-400">
-                <li><Link to="/features" className="hover:text-[#0595f6] transition-colors hover:translate-x-2 transform duration-300 block">Chrome Extension</Link></li>
-                <li><Link to="/features" className="hover:text-[#0595f6] transition-colors hover:translate-x-2 transform duration-300 block">Human Agent Service</Link></li>
-                <li><Link to="/pricing" className="hover:text-[#0595f6] transition-colors hover:translate-x-2 transform duration-300 block">Enterprise Plans</Link></li>
-                <li><a href="#" className="hover:text-[#0595f6] transition-colors hover:translate-x-2 transform duration-300 block">API Access</a></li>
+                <li>
+                  <Link
+                    to="/features"
+                    className="hover:text-[#0595f6] transition-colors transform duration-300 block"
+                  >
+                    Chrome Extension
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/features"
+                    className="hover:text-[#0595f6] transition-colors transform duration-300 block"
+                  >
+                    Human Agent Service
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    to="/pricing"
+                    className="hover:text-[#0595f6] transition-colors transform duration-300 block"
+                  >
+                    Enterprise Plans
+                  </Link>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="hover:text-[#0595f6] transition-colors transform duration-300 block"
+                  >
+                    API Access
+                  </a>
+                </li>
               </ul>
             </div>
-            
+
             <div>
               <h4 className="font-bold text-xl mb-6 text-[#0595f6]">Company</h4>
               <ul className="space-y-4 text-gray-400">
-                <li><a href="#" className="hover:text-[#0595f6] transition-colors hover:translate-x-2 transform duration-300 block">About Us</a></li>
-                <li><Link to="/careers" className="hover:text-[#0595f6] transition-colors hover:translate-x-2 transform duration-300 block">Careers</Link></li>
-                <li><a href="#" className="hover:text-[#0595f6] transition-colors hover:translate-x-2 transform duration-300 block">Press Kit</a></li>
-                <li><a href="#" className="hover:text-[#0595f6] transition-colors hover:translate-x-2 transform duration-300 block">Contact</a></li>
+                <li>
+                  <a
+                    href="#"
+                    className="hover:text-[#0595f6] transition-colors transform duration-300 block"
+                  >
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <Link
+                    to="/careers"
+                    className="hover:text-[#0595f6] transition-colors transform duration-300 block"
+                  >
+                    Careers
+                  </Link>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="hover:text-[#0595f6] transition-colors transform duration-300 block"
+                  >
+                    Press Kit
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="hover:text-[#0595f6] transition-colors transform duration-300 block"
+                  >
+                    Contact
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
-          
+
           <div className="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 flex items-center gap-2">
               <span>&copy; 2025 JobsForce.ai. All rights reserved.</span>
               <div className="w-2 h-2 bg-[#0595f6] rounded-full animate-pulse"></div>
             </p>
             <div className="flex items-center gap-8 mt-4 md:mt-0">
-              <a href="#" className="text-gray-400 hover:text-[#0595f6] transition-colors">Privacy Policy</a>
-              <a href="#" className="text-gray-400 hover:text-[#0595f6] transition-colors">Terms of Service</a>
-              <a href="#" className="text-gray-400 hover:text-[#0595f6] transition-colors">Cookie Policy</a>
+              <a
+                href="#"
+                className="text-gray-400 hover:text-[#0595f6] transition-colors"
+              >
+                Privacy Policy
+              </a>
+              <a
+                href="#"
+                className="text-gray-400 hover:text-[#0595f6] transition-colors"
+              >
+                Terms of Service
+              </a>
+              <a
+                href="#"
+                className="text-gray-400 hover:text-[#0595f6] transition-colors"
+              >
+                Cookie Policy
+              </a>
             </div>
           </div>
         </div>
