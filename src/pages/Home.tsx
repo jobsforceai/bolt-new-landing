@@ -82,7 +82,7 @@ const Home = () => {
   };
 
   return (
-    <div className="pt-20">
+    <div className="pt-16">
       {/* Revolutionary Hero Section */}
       <section className="py-24 bg-gradient-to-br from-slate-50 via-blue-50/30 to-white relative overflow-hidden">
         <div className="absolute inset-0">

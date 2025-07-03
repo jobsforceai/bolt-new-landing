@@ -33,7 +33,7 @@ import { Link } from "react-router-dom";
 const JobsForcePromo = () => {
   const [activeTab, setActiveTab] = useState("extension");
   const [jobCount, setJobCount] = useState(50);
-  const extensionPrice = 9;
+  const extensionPrice = 29;
   const agentPrice = jobCount * 0.5;
 
   const handleJobCountChange = (delta) => {
@@ -57,9 +57,9 @@ const JobsForcePromo = () => {
               <button
                 key={tab.id}
                 onClick={() => setActiveTab(tab.id)}
-                className={`flex-1 flex items-center justify-center gap-3 py-4 px-6 rounded-xl font-bold text-lg transition-all duration-300 ${
+                className={`flex-1 flex items-center justify-center gap-3 py-4 px-4 mx-2 rounded-xl font-bold text-lg transition-all duration-300 ${
                   activeTab === tab.id
-                    ? "bg-gradient-to-r from-cyan-400 to-blue-500 text-white shadow-lg transform scale-105"
+                    ? " bg-gradient-to-r from-cyan-400 to-blue-500 text-white shadow-lg transform scale-105"
                     : "text-slate-600 hover:text-slate-900 hover:bg-slate-50"
                 }`}
               >

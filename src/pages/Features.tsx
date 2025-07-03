@@ -26,7 +26,7 @@ import {
 
 const Features = () => {
   return (
-    <div className="pt-20">
+    <div className="pt-16">
       {/* Hero Section */}
       <section className="py-24 bg-gradient-to-br from-slate-50 via-blue-50/30 to-white relative overflow-hidden">
         <div className="absolute inset-0">
@@ -37,7 +37,7 @@ const Features = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center max-w-5xl mx-auto">
             <div className="inline-flex items-center gap-3 bg-gradient-to-r from-[#0595f6]/10 to-blue-500/10 text-[#0595f6] px-6 py-3 rounded-full text-sm font-bold mb-8 border border-[#0595f6]/20">
-              <Lightbulb size={18} />
+              <Lightbulb  size={18} />
               Revolutionary Features
             </div>
 

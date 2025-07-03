@@ -1,7 +1,7 @@
-import { Rocket, ArrowRight, Play, Star, StarHalf } from "lucide-react";
-import TerminalWithAnim from "./terminal-with-anim";
-import { motion } from "framer-motion";
-import RotatingText from "./bitsAnimation";
+import React from 'react';
+import { motion } from 'framer-motion';
+import { Star, StarHalf } from 'lucide-react';
+import TerminalWithAnim from './terminal-with-anim';
 const HomeComponent = () => {
   return (
     <div className="flex flex-col lg:flex-row items-center justify-between max-w-7xl mx-auto px-6 mb-12">
@@ -93,18 +93,7 @@ const HomeComponent = () => {
             {/* Primary CTA */}
             <div className="flex items-center ">
               <a href={`/waitlist`}>
-                <button className="cursor-pointer relative px-8 py-4 text-lg font-medium text-white rounded-full transition-all duration-300 hover:scale-[1.02] group overflow-hidden">
-                  {/* Main Gradient Background */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-sky-400 to-pink-400 rounded-full opacity-90 group-hover:opacity-100 transition-opacity duration-300"></div>
-
-                  {/* Subtle Noise Texture */}
-                  <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjEiIC8+PC9zdmc+')] opacity-5 mix-blend-overlay"></div>
-
-                  {/* Border Glow */}
-                  <div className="absolute inset-0 rounded-full border-2 border-transparent group-hover:border-white/30 transition-all duration-500"></div>
-
-                  {/* Inner Shadow */}
-                  <div className="absolute inset-0 rounded-full shadow-[inset_0_1px_1px_rgba(255,255,255,0.3)]"></div>
+                <button className="cursor-pointer relative px-8 py-4 text-lg font-medium text-white rounded-full bg-gradient-to-r from-cyan-400 to-blue-500  shadow-lg transform scale-105 transition-all duration-300 hover:scale-[1.02] group overflow-hidden">
 
                   {/* Content */}
                   <span className="relative z-10 flex items-center justify-center gap-2">
@@ -133,51 +122,10 @@ const HomeComponent = () => {
                     <div className="absolute -inset-8 bg-gradient-to-r from-white/30 via-white/10 to-white/30 opacity-0 group-hover:opacity-100 group-hover:animate-[sweep_1.5s_ease-in-out_infinite] transform rotate-45"></div>
                   </div>
                 </button>
+             
               </a>
             </div>
 
-            {/* 90 Days Challenge Button */}
-            <motion.div
-              initial={{ opacity: 0, x: 20 }}
-              animate={{ opacity: 1, x: 0 }}
-              transition={{ delay: 0.9, duration: 0.6 }}
-            >
-              <a href="/job-guarantee">
-                <button className="cursor-pointer relative group px-6 py-3 text-base font-medium text-white bg-gradient-to-r from-amber-500 to-rose-500 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-[1.03] overflow-hidden border border-amber-300/30 min-w-[220px]">
-                  {/* Animated background layer */}
-                  <div className="absolute inset-0 bg-gradient-to-r from-amber-600 to-rose-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-full"></div>
-
-                  {/* Glow effect */}
-                  <div className="absolute inset-0 rounded-full shadow-[inset_0_0_12px_rgba(255,255,255,0.3)]"></div>
-
-                  {/* Content */}
-                  <div className="relative z-10 flex items-center justify-center gap-2">
-                    <motion.span
-                      className="text-lg"
-                      animate={{
-                        scale: [1, 1.2, 1],
-                        rotate: [0, 10, -5, 0],
-                      }}
-                      transition={{
-                        duration: 2,
-                        repeat: Infinity,
-                        repeatDelay: 3,
-                      }}
-                    >
-                      🚀
-                    </motion.span>
-                    <span className="font-semibold tracking-tight">
-                      Join our 90-Days Challenge
-                    </span>
-                  </div>
-
-                  {/* Shimmer effect */}
-                  <div className="absolute inset-0 overflow-hidden rounded-full">
-                    <div className="absolute -inset-8 bg-gradient-to-r from-transparent via-white/30 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-[sweep_1.5s_ease-in-out_infinite] transform rotate-12"></div>
-                  </div>
-                </button>
-              </a>
-            </motion.div>
           </div>
 
           {/* Rating Section - Below Buttons */}

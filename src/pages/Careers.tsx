@@ -1,88 +1,62 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import { 
   MapPin, 
-  Clock, 
-  DollarSign, 
-  Users, 
-  Briefcase,
+  Briefcase, 
+  ArrowRight,
+  Building,
   Heart,
+  Laptop,
+  TrendingUp,
+  Calendar,
   Coffee,
+  Rocket,
   Zap,
+  Users,
   Target,
   Award,
-  Sparkles,
-  ArrowRight,
-  CheckCircle,
   Globe,
-  Laptop,
-  Calendar,
-  TrendingUp,
   Star,
-  Building,
-  Rocket
+  Clock,
+  DollarSign
 } from 'lucide-react';
+
+interface Job {
+  id: string;
+  title: string;
+  department: string;
+  location: string;
+  type: string;
+  salary: string;
+  experience: string;
+  posted: string;
+  description: string;
+  responsibilities: string[];
+  requirements: string[];
+  skills: string[];
+  benefits: string[];
+  applications: string;
+}
 
 const Careers = () => {
   const [selectedDepartment, setSelectedDepartment] = useState('All');
+  const [jobs, setJobs] = useState<Job[]>([]);
 
-  const departments = ['All', 'Engineering', 'Product', 'Design', 'Marketing', 'Sales', 'Operations'];
+  useEffect(() => {
+    const fetchJobs = async () => {
+      try {
+        const response = await fetch('https://carrer-and-early-signup.vercel.app/jobs/');
+        const data = await response.json();
+        setJobs(data);
+      } catch (error) {
+        console.error('Error fetching jobs:', error);
+      }
+    };
 
-  const jobs = [
-    {
-      title: 'Senior Full Stack Engineer',
-      department: 'Engineering',
-      location: 'San Francisco, CA / Remote',
-      type: 'Full-time',
-      salary: '$150,000 - $200,000',
-      description: 'Build the next generation of AI-powered job search tools. Work with React, Node.js, and cutting-edge AI technologies.',
-      requirements: ['5+ years full-stack experience', 'React/Node.js expertise', 'AI/ML experience preferred']
-    },
-    {
-      title: 'AI/ML Engineer',
-      department: 'Engineering',
-      location: 'Remote',
-      type: 'Full-time',
-      salary: '$160,000 - $220,000',
-      description: 'Develop and optimize our AI algorithms for job matching, resume optimization, and application automation.',
-      requirements: ['PhD/MS in AI/ML or equivalent', 'Python/TensorFlow experience', 'NLP expertise']
-    },
-    {
-      title: 'Product Manager',
-      department: 'Product',
-      location: 'New York, NY / Remote',
-      type: 'Full-time',
-      salary: '$140,000 - $180,000',
-      description: 'Lead product strategy and roadmap for our Chrome extension and human agent services.',
-      requirements: ['5+ years product management', 'B2C product experience', 'Data-driven mindset']
-    },
-    {
-      title: 'Senior UX Designer',
-      department: 'Design',
-      location: 'Los Angeles, CA / Remote',
-      type: 'Full-time',
-      salary: '$120,000 - $160,000',
-      description: 'Design intuitive and beautiful user experiences that help people find their dream jobs.',
-      requirements: ['5+ years UX design', 'Figma expertise', 'User research experience']
-    },
-    {
-      title: 'Growth Marketing Manager',
-      department: 'Marketing',
-      location: 'Austin, TX / Remote',
-      type: 'Full-time',
-      salary: '$100,000 - $140,000',
-      description: 'Drive user acquisition and growth through innovative marketing strategies and campaigns.',
-      requirements: ['3+ years growth marketing', 'Performance marketing', 'Analytics expertise']
-    },
-    {
-      title: 'Enterprise Sales Director',
-      department: 'Sales',
-      location: 'Chicago, IL / Remote',
-      type: 'Full-time',
-      salary: '$130,000 - $170,000 + Commission',
-      description: 'Lead enterprise sales efforts and build relationships with Fortune 500 companies.',
-      requirements: ['7+ years B2B sales', 'Enterprise sales experience', 'SaaS background']
-    }
-  ];
+    fetchJobs();
+  }, []);
+
+  const departments = ['All', ...new Set(jobs.map(job => job.department))];
 
   const filteredJobs = selectedDepartment === 'All' 
     ? jobs 
@@ -145,7 +119,7 @@ const Careers = () => {
   ];
 
   return (
-    <div className="pt-20">
+    <div className="pt-16">
       {/* Hero Section */}
       <section className="py-24 bg-gradient-to-br from-slate-50 via-blue-50/30 to-white relative overflow-hidden">
         <div className="absolute inset-0">
@@ -327,10 +301,10 @@ const Careers = () => {
                   </div>
                   
                   <div className="lg:ml-8">
-                    <button className="w-full lg:w-auto bg-gradient-to-r from-[#0595f6] to-blue-500 text-white px-8 py-4 rounded-2xl font-bold hover:shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 group">
+                    <Link to={`/apply/${job.id}`} className="w-full lg:w-auto bg-gradient-to-r from-[#0595f6] to-blue-500 text-white px-8 py-4 rounded-2xl font-bold hover:shadow-lg transition-all duration-300 hover:scale-105 flex items-center justify-center gap-2 group">
                       <span>Apply Now</span>
                       <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
-                    </button>
+                    </Link>
                   </div>
                 </div>
               </div>

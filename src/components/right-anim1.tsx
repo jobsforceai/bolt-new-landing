@@ -2,7 +2,8 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { User, FileText, Edit, CheckCircle, Star, Briefcase } from 'lucide-react';
+import { Briefcase, CheckCircle, Edit, FileText, User } from 'lucide-react';
+
 
 // --- Enhanced Card Components ---
 
