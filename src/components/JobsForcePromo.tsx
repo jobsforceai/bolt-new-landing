@@ -180,7 +180,7 @@ const JobsForcePromo = () => {
             {/* Image */}
             <div className="bg-gradient-to-br from-slate-100 to-slate-200 rounded-3xl p-8 shadow-2xl border border-white/50">
               <div className="bg-white/90 backdrop-blur-sm rounded-2xl  shadow-xl">
-                <img src="./models/rm.png" alt="extension preview"  className="object-contain"/>
+                <img src="/models/rm.png" alt="extension preview"  className="object-contain"/>
               </div>
             </div>
           </div>
@@ -314,7 +314,7 @@ const JobsForcePromo = () => {
             {/* Image */}
             <div className="bg-gradient-to-br from-slate-100 to-slate-200 rounded-3xl p-8 shadow-2xl border border-white/50">
               <div className="bg-white/90 backdrop-blur-sm rounded-2xl  shadow-xl">
-               <img src="./models/hum.png" alt="Human Agent" className="object-cover" />
+               <img src="/models/hum.png" alt="Human Agent" className="object-cover" />
               </div>
             </div>
           </div>
