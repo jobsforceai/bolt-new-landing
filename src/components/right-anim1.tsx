@@ -9,7 +9,7 @@ import { User, FileText, Edit, CheckCircle, Star, Briefcase } from 'lucide-react
 // 1. User Details Card
 const UserDetailsCard = () => (
     <motion.div 
-        className="backdrop-blur-xl bg-white/80 rounded-3xl p-6 border border-blue-200/80 h-full flex flex-col justify-center shadow-lg overflow-hidden"
+        className="backdrop-blur-xl bg-white/80 rounded-3xl p-6 border border-blue-200/80 h-full flex flex-col justify-center  overflow-hidden"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -42,7 +42,7 @@ const UserDetailsCard = () => (
 // 2. Resume Card
 const ResumeCard = () => (
     <motion.div 
-        className="backdrop-blur-xl bg-white/80 rounded-3xl p-6 border border-purple-200/80 h-full flex items-center justify-between shadow-lg overflow-hidden"
+        className="backdrop-blur-xl bg-white/80 rounded-3xl p-6 border border-purple-200/80 h-full flex items-center justify-between  overflow-hidden"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -65,7 +65,7 @@ const ResumeCard = () => (
 // 3. Auto Form Filling Card
 const AutoFormFilling = () => (
     <motion.div 
-        className="backdrop-blur-xl bg-white/80 rounded-3xl p-4 border border-teal-200/80 h-full flex flex-col justify-center shadow-lg"
+        className="backdrop-blur-xl bg-white/80 rounded-3xl p-4 border border-teal-200/80 h-full flex flex-col justify-center "
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -106,7 +106,7 @@ const CongratsCard = () => {
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ duration: 0.6, ease: "backOut" }}
-            className="relative backdrop-blur-xl bg-gradient-to-br from-green-100 to-blue-100 rounded-3xl p-4 border border-white/30 h-full flex flex-col items-center justify-center shadow-2xl overflow-hidden"
+            className="relative backdrop-blur-xl shadow-sm bg-gradient-to-br from-green-100 to-blue-100 rounded-3xl p-4 border border-white/30 h-full flex flex-col items-center justify-center  overflow-hidden"
         >
             {Array.from({ length: 20 }).map((_, i) => (
                 <motion.div
@@ -151,8 +151,8 @@ const steps = [
     { type: 'congrats' },
 ];
 
-const CARD_HEIGHT = 140; // Increased card height to accommodate new designs
-const STEP_DURATION_MS = 2200; // Adjusted timing for better feel
+const CARD_HEIGHT = 140; 
+const STEP_DURATION_MS = 2200; // Unified duration
 
 const RightAnim1 = () => {
     const [step, setStep] = React.useState(0);
@@ -222,7 +222,7 @@ type JobCardProps = {
 };
 
 const JobCard = ({ title, details }: JobCardProps) => (
-    <div className="backdrop-blur-xl bg-white/90 rounded-3xl p-5 border border-gray-200/80 h-full flex flex-col justify-center shadow-md overflow-hidden">
+    <div className="backdrop-blur-xl bg-white/90 rounded-3xl p-5 border border-gray-200/80 h-full flex flex-col justify-center  overflow-hidden">
         <div className="flex items-start gap-4">
             <div className="w-11 h-11 bg-gradient-to-br from-gray-700 to-gray-900 rounded-xl flex items-center justify-center text-white flex-shrink-0">
                 <Briefcase size={22} />
