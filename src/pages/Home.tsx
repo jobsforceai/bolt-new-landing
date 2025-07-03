@@ -94,10 +94,13 @@ const Home = () => {
           ].map((item, index) => (
             <div
               key={index}
-              className="group bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-gray-100 hover:shadow-xl transition-all duration-300 hover:scale-105"
+              className="group rounded-2xl border border-gray-200 bg-white/70 p-6 shadow-sm backdrop-blur-md hover:shadow-md transition-shadow duration-100"
             >
-              <item.icon className={`${item.color} mb-3 mx-auto`} size={32} />
-              <div className="font-bold text-gray-900 text-lg">
+              <item.icon
+                className={`mx-auto mb-4 text-3xl ${item.color}`}
+                aria-hidden="true"
+              />
+              <div className="text-center text-lg font-semibold text-gray-800">
                 {item.label}
               </div>
             </div>
@@ -249,7 +252,7 @@ const Home = () => {
                     return (
                       <div
                         key={index}
-                        className="group/item flex items-center gap-4 p-4 bg-gradient-to-r from-gray-50 to-blue-50/50 rounded-2xl hover:from-[#0595f6]/5 hover:to-blue-500/5 transition-all duration-300 hover:scale-105 border border-gray-100 hover:border-[#0595f6]/20"
+                        className="group/item flex items-center gap-4 p-4 bg-gradient-to-r from-gray-50 to-blue-50/50 rounded-2xl hover:from-[#0595f6]/5 hover:to-blue-500/5 transition-all duration-300 border border-gray-100 hover:border-[#0595f6]/20"
                       >
                         <div className="bg-[#0595f6]/10 p-3 rounded-xl group-hover/item:bg-[#0595f6]/20 transition-colors">
                           <Icon className="text-[#0595f6]" size={20} />
@@ -288,7 +291,7 @@ const Home = () => {
                   </div>
                 </div>
 
-                <button className="w-full bg-gradient-to-r from-[#0595f6] to-blue-500 text-white py-5 rounded-2xl font-bold text-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 flex items-center justify-center gap-3 group/btn relative overflow-hidden">
+                <button className="w-full bg-gradient-to-r from-[#0595f6] to-blue-500 text-white py-5 rounded-2xl font-bold text-lg hover:shadow-2xl transition-all duration-500 flex items-center justify-center gap-3 group/btn relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-500"></div>
                   <Download size={24} className="relative z-10" />
                   <span className="relative z-10">Get Extension Now</span>
@@ -422,7 +425,7 @@ const Home = () => {
                   ].map((feature, index) => (
                     <div
                       key={index}
-                      className="group/item flex items-center gap-4 p-4 bg-gradient-to-r from-blue-50 to-purple-50/50 rounded-2xl hover:from-blue-500/5 hover:to-purple-500/5 transition-all duration-300 hover:scale-105 border border-gray-100 hover:border-blue-500/20"
+                      className="group/item flex items-center gap-4 p-4 bg-gradient-to-r from-blue-50 to-purple-50/50 rounded-2xl hover:from-blue-500/5 hover:to-purple-500/5 transition-all duration-300 border border-gray-100 hover:border-blue-500/20"
                     >
                       <div className="bg-blue-500/10 p-3 rounded-xl group-hover/item:bg-blue-500/20 transition-colors">
                         <feature.icon className="text-blue-600" size={20} />
@@ -459,7 +462,7 @@ const Home = () => {
                   <div className="flex items-center justify-center gap-8 bg-white rounded-2xl p-6 shadow-lg">
                     <button
                       onClick={() => handleJobCountChange(-5)}
-                      className="bg-gradient-to-r from-gray-100 to-blue-100 hover:from-blue-100 hover:to-purple-100 border border-gray-200 hover:border-blue-300 p-4 rounded-2xl transition-all duration-300 hover:scale-110 shadow-md hover:shadow-lg"
+                      className="bg-gradient-to-r from-gray-100 to-blue-100 hover:from-blue-100 hover:to-purple-100 border border-gray-200 hover:border-blue-300 p-4 rounded-2xl transition-all duration-300 shadow-md hover:shadow-lg"
                     >
                       <Minus size={20} />
                     </button>
@@ -473,14 +476,14 @@ const Home = () => {
                     </div>
                     <button
                       onClick={() => handleJobCountChange(5)}
-                      className="bg-gradient-to-r from-gray-100 to-blue-100 hover:from-blue-100 hover:to-purple-100 border border-gray-200 hover:border-blue-300 p-4 rounded-2xl transition-all duration-300 hover:scale-110 shadow-md hover:shadow-lg"
+                      className="bg-gradient-to-r from-gray-100 to-blue-100 hover:from-blue-100 hover:to-purple-100 border border-gray-200 hover:border-blue-300 p-4 rounded-2xl transition-all duration-300 shadow-md hover:shadow-lg"
                     >
                       <Plus size={20} />
                     </button>
                   </div>
                 </div>
 
-                <button className="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white py-5 rounded-2xl font-bold text-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 flex items-center justify-center gap-3 group/btn relative overflow-hidden">
+                <button className="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white py-5 rounded-2xl font-bold text-lg hover:shadow-2xl transition-all duration-500 flex items-center justify-center gap-3 group/btn relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-500"></div>
                   <Users size={24} className="relative z-10" />
                   <span className="relative z-10">Hire Your Agent</span>
@@ -541,10 +544,10 @@ const Home = () => {
               return (
                 <div
                   key={index}
-                  className="group text-center hover:scale-110 transition-all duration-500"
+                  className="group text-center transition-all duration-500"
                 >
                   <div
-                    className={`bg-gradient-to-br ${feature.gradient}/10 w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-8 group-hover:shadow-2xl transition-all duration-500 group-hover:scale-110 border border-gray-100`}
+                    className={`bg-gradient-to-br ${feature.gradient}/10 w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-8 group-hover:shadow-md transition-all duration-500 border border-gray-100`}
                   >
                     <Icon />
                   </div>
@@ -668,10 +671,7 @@ const Home = () => {
                 sublabel: "From application",
               },
             ].map((stat, index) => (
-              <div
-                key={index}
-                className="group hover:scale-110 transition-all duration-500"
-              >
+              <div key={index} className="group">
                 <div className="text-6xl font-black text-[#0595f6] mb-4">
                   {stat.number}
                 </div>
@@ -735,7 +735,7 @@ const Home = () => {
                 className={`px-10 py-5 rounded-2xl font-bold transition-all duration-500 text-xl ${
                   isSubmitted
                     ? "bg-green-500 text-white shadow-2xl scale-105"
-                    : "bg-gradient-to-r from-[#0595f6] to-blue-500 text-white hover:shadow-2xl hover:scale-110"
+                    : "bg-gradient-to-r from-[#0595f6]/95 to-blue-500/95 text-white hover:from-[#0595f6] hover:to-blue-500 transition-colors duration-200"
                 }`}
               >
                 {isSubmitted ? (
@@ -761,7 +761,7 @@ const Home = () => {
             ].map((item, index) => (
               <div
                 key={index}
-                className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10 hover:scale-105 transition-all duration-300"
+                className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-300"
               >
                 <div className="text-4xl font-black text-[#0595f6] mb-3">
                   {item.number}

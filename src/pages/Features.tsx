@@ -277,10 +277,7 @@ const Features = () => {
                   "Advanced form recognition and intelligent data extraction",
               },
             ].map((tech, index) => (
-              <div
-                key={index}
-                className="group text-center hover:scale-105 transition-all duration-300"
-              >
+              <div key={index} className="group text-center">
                 <div className="bg-gradient-to-br from-[#0595f6]/10 to-blue-500/10 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:shadow-lg transition-all duration-300">
                   <tech.icon className="text-[#0595f6]" size={32} />
                 </div>
@@ -357,7 +354,7 @@ const Features = () => {
             Join thousands of professionals who are already transforming their
             careers
           </p>
-          <button className="bg-white text-[#0595f6] px-12 py-5 rounded-2xl font-bold text-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center gap-3 mx-auto">
+          <button className="bg-white/95 text-[#0595f6] px-12 py-5 rounded-2xl font-bold text-xl hover:shadow-xl hover:bg-white transition-all duration-300 flex items-center gap-3 mx-auto">
             <Sparkles size={24} />
             Join Waitlist Now
             <ArrowRight size={24} />
