@@ -7,6 +7,7 @@ import Features from './pages/Features';
 import Pricing from './pages/Pricing';
 import JobApply from './pages/JobApply';
 import JobApplyForm from './pages/JobApplyForm';
+import Waitlist from './pages/Waitlist';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path="apply/:id/form" element={<JobApplyForm />} />
         <Route path="features" element={<Features />} />
         <Route path="pricing" element={<Pricing />} />
+        <Route path="waitlist" element={<Waitlist />} />
       </Route>
     </Routes>
   );

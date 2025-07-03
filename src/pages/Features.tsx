@@ -23,6 +23,7 @@ import {
   Clock,
   FileText,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Features = () => {
   return (
@@ -37,7 +38,7 @@ const Features = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center max-w-5xl mx-auto">
             <div className="inline-flex items-center gap-3 bg-gradient-to-r from-[#0595f6]/10 to-blue-500/10 text-[#0595f6] px-6 py-3 rounded-full text-sm font-bold mb-8 border border-[#0595f6]/20">
-              <Lightbulb  size={18} />
+              <Lightbulb size={18} />
               Revolutionary Features
             </div>
 
@@ -354,11 +355,13 @@ const Features = () => {
             Join thousands of professionals who are already transforming their
             careers
           </p>
-          <button className="bg-white/95 text-[#0595f6] px-12 py-5 rounded-2xl font-bold text-xl hover:shadow-xl hover:bg-white transition-all duration-300 flex items-center gap-3 mx-auto">
-            <Sparkles size={24} />
-            Join Waitlist Now
-            <ArrowRight size={24} />
-          </button>
+          <Link to="/waitlist">
+            <button className="bg-white/95 text-[#0595f6] px-12 py-5 rounded-2xl font-bold text-xl hover:shadow-xl hover:bg-white transition-all duration-300 flex items-center gap-3 mx-auto">
+              <Sparkles size={24} />
+              Join Waitlist Now
+              <ArrowRight size={24} />
+            </button>
+          </Link>
         </div>
       </section>
     </div>

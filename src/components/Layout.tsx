@@ -73,7 +73,7 @@ const Layout = () => {
                 <Rocket size={16} />
                 <a href="/#waitlist">Join waitlist</a>
               </div> */}
-              <a href="/#waitlist">
+              <Link to="/waitlist">
                 {/* <div className="flex items-center justify-center gap-2">
                     <Rocket size={16} />
                     Join Waitlist
@@ -107,7 +107,7 @@ const Layout = () => {
                     <div className="absolute -inset-8 bg-gradient-to-r from-white/30 via-white/10 to-white/30 opacity-0 group-hover:opacity-100 group-hover:animate-[sweep_1.5s_ease-in-out_infinite] transform rotate-45"></div>
                   </div>
                 </div>
-              </a>
+              </Link>
             </nav>
 
             {/* Mobile Menu Button */}
@@ -148,7 +148,7 @@ const Layout = () => {
                     {item.name}
                   </Link>
                 ))}
-                <Link to="/#waitlist">
+                <Link to="/waitlist">
                   {/* <div className="flex items-center justify-center gap-2">
                     <Rocket size={16} />
                     Join Waitlist

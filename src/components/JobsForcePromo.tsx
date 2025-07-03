@@ -171,7 +171,7 @@ const JobsForcePromo = () => {
                     Cancel anytime • No hidden fees
                   </div>
                   <button className="bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-600 text-white py-4 px-12 rounded-2xl font-bold text-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
-                    <a href="#waitlist">Join waitlist</a>
+                    <Link to="/waitlist">Join waitlist</Link>
                   </button>
                 </div>
               </div>
@@ -306,7 +306,7 @@ const JobsForcePromo = () => {
                 </div>
 
                 <button className="w-full bg-gradient-to-r from-blue-500 via-purple-500 to-pink-600 text-white py-4 px-12 rounded-2xl font-bold text-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
-                  <a href="#waitlist">Join waitlist</a>
+                <Link to="/waitlist">Join waitlist</Link>
                 </button>
               </div>
             </div>

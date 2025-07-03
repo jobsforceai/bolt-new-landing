@@ -1,5 +1,6 @@
 import React from "react";
 import { CheckCircle, Bot, User, Plus, Minus, Zap } from "lucide-react";
+import { Link } from "react-router-dom";
 
 interface PricingCardProps {
   type: "extension" | "agent";
@@ -132,6 +133,8 @@ const PricingCard: React.FC<PricingCardProps> = ({
             </div>
           </div>
         )}
+<Link to="/waitlist">
+
 
         <button
           className={`w-full py-5 rounded-2xl font-bold text-lg transition-all duration-300 hover:scale-105 ${
@@ -142,6 +145,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
         >
           {buttonText}
         </button>
+</Link>
       </div>
     </div>
   );

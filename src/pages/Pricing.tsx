@@ -5,6 +5,7 @@ import {
   Sparkles
 } from 'lucide-react';
 import PricingCard from '../components/PricingCard';
+import { Link } from 'react-router-dom';
 
 const Pricing = () => {
   const [jobCount, setJobCount] = useState('10');
@@ -260,11 +261,13 @@ const Pricing = () => {
             Join thousands of professionals who are already landing their dream
             jobs
           </p>
-          <button className="bg-white text-[#0595f6] px-12 py-5 rounded-2xl font-bold text-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center gap-3 mx-auto">
-            <Star size={24} />
-            Join Waitlist Now
-            <ArrowRight size={24} />
-          </button>
+          <Link to="/waitlist">
+            <button className="bg-white/95 text-[#0595f6] px-12 py-5 rounded-2xl font-bold text-xl hover:shadow-xl hover:bg-white transition-all duration-300 flex items-center gap-3 mx-auto">
+              <Sparkles size={24} />
+              Join Waitlist Now
+              <ArrowRight size={24} />
+            </button>
+          </Link>
         </div>
       </section>
     </div>
