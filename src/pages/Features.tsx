@@ -30,20 +30,20 @@ const Features = () => {
       {/* Hero Section */}
       <section className="py-24 bg-gradient-to-br from-slate-50 via-blue-50/30 to-white relative overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-[#41e3fe]/10 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute top-20 left-10 w-72 h-72 bg-[#0595f6]/10 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center max-w-5xl mx-auto">
-            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-[#41e3fe]/10 to-blue-500/10 text-[#41e3fe] px-6 py-3 rounded-full text-sm font-bold mb-8 border border-[#41e3fe]/20">
+            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-[#0595f6]/10 to-blue-500/10 text-[#0595f6] px-6 py-3 rounded-full text-sm font-bold mb-8 border border-[#0595f6]/20">
               <Lightbulb size={18} />
               Revolutionary Features
             </div>
             
             <h1 className="text-7xl md:text-8xl font-black text-gray-900 mb-8 leading-tight">
               Cutting-Edge
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#41e3fe] via-blue-500 to-purple-600 block">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0595f6] via-blue-500 to-purple-600 block">
                 AI Technology
               </span>
             </h1>
@@ -60,7 +60,7 @@ const Features = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <div className="flex items-center justify-center gap-4 mb-8">
-              <div className="bg-gradient-to-br from-[#41e3fe] to-blue-500 p-4 rounded-2xl shadow-lg">
+              <div className="bg-gradient-to-br from-[#0595f6] to-blue-500 p-4 rounded-2xl shadow-lg">
                 <Chrome className="text-white" size={32} />
               </div>
               <h2 className="text-5xl font-black text-gray-900">Chrome Extension Features</h2>
@@ -76,7 +76,7 @@ const Features = () => {
                 icon: Zap,
                 title: 'One-Click AI Apply to 1000+ Jobs',
                 description: 'Revolutionary bulk application technology that applies to hundreds of relevant positions with a single click',
-                gradient: 'from-[#41e3fe] to-blue-500'
+                gradient: 'from-[#0595f6] to-blue-500'
               },
               {
                 icon: Gauge,
@@ -192,7 +192,7 @@ const Features = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="text-5xl font-black text-gray-900 mb-8">
-              Powered by <span className="text-[#41e3fe]">Advanced Technology</span>
+              Powered by <span className="text-[#0595f6]">Advanced Technology</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Built on cutting-edge AI and machine learning technologies for unparalleled performance
@@ -223,8 +223,8 @@ const Features = () => {
               }
             ].map((tech, index) => (
               <div key={index} className="group text-center hover:scale-105 transition-all duration-300">
-                <div className="bg-gradient-to-br from-[#41e3fe]/10 to-blue-500/10 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:shadow-lg transition-all duration-300">
-                  <tech.icon className="text-[#41e3fe]" size={32} />
+                <div className="bg-gradient-to-br from-[#0595f6]/10 to-blue-500/10 w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:shadow-lg transition-all duration-300">
+                  <tech.icon className="text-[#0595f6]" size={32} />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">{tech.title}</h3>
                 <p className="text-gray-600">{tech.description}</p>
@@ -239,7 +239,7 @@ const Features = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <div className="flex items-center justify-center gap-4 mb-8">
-              <div className="bg-gradient-to-br from-[#41e3fe] to-blue-500 p-4 rounded-2xl shadow-lg">
+              <div className="bg-gradient-to-br from-[#0595f6] to-blue-500 p-4 rounded-2xl shadow-lg">
                 <Shield className="text-white" size={32} />
               </div>
               <h2 className="text-5xl font-black">Enterprise-Grade Security</h2>
@@ -268,8 +268,8 @@ const Features = () => {
               }
             ].map((security, index) => (
               <div key={index} className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10 hover:bg-white/10 transition-all duration-300">
-                <div className="bg-[#41e3fe]/20 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
-                  <security.icon className="text-[#41e3fe]" size={28} />
+                <div className="bg-[#0595f6]/20 w-16 h-16 rounded-2xl flex items-center justify-center mb-6">
+                  <security.icon className="text-[#0595f6]" size={28} />
                 </div>
                 <h3 className="text-2xl font-bold mb-4">{security.title}</h3>
                 <p className="text-gray-300 leading-relaxed">{security.description}</p>
@@ -280,7 +280,7 @@ const Features = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-r from-[#41e3fe] to-blue-500 text-white">
+      <section className="py-24 bg-gradient-to-r from-[#0595f6] to-blue-500 text-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-6xl font-black mb-8">
             Ready to Experience the Future?
@@ -288,7 +288,7 @@ const Features = () => {
           <p className="text-2xl mb-12 opacity-90">
             Join thousands of professionals who are already transforming their careers
           </p>
-          <button className="bg-white text-[#41e3fe] px-12 py-5 rounded-2xl font-bold text-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center gap-3 mx-auto">
+          <button className="bg-white text-[#0595f6] px-12 py-5 rounded-2xl font-bold text-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center gap-3 mx-auto">
             <Sparkles size={24} />
             Join Waitlist Now
             <ArrowRight size={24} />

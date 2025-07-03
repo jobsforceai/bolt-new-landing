@@ -3,7 +3,7 @@ import TerminalWithAnim from './terminal-with-anim'
 
 const HomeComponent = () => {
   return (
-    <div className='flex flex-col lg:flex-row items-center justify-center'>
+    <div className='flex flex-col lg:flex-row items-center justify-between'>
          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center max-w-6xl mx-auto mb-20">
             

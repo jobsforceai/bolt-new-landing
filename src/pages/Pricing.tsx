@@ -31,20 +31,20 @@ const Pricing = () => {
       {/* Hero Section */}
       <section className="py-24 bg-gradient-to-br from-slate-50 via-blue-50/30 to-white relative overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-[#41e3fe]/10 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute top-20 left-10 w-72 h-72 bg-[#0595f6]/10 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center max-w-5xl mx-auto">
-            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-[#41e3fe]/10 to-blue-500/10 text-[#41e3fe] px-6 py-3 rounded-full text-sm font-bold mb-8 border border-[#41e3fe]/20">
+            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-[#0595f6]/10 to-blue-500/10 text-[#0595f6] px-6 py-3 rounded-full text-sm font-bold mb-8 border border-[#0595f6]/20">
               <Sparkles size={18} />
               Transparent Pricing
             </div>
             
             <h1 className="text-7xl md:text-8xl font-black text-gray-900 mb-8 leading-tight">
               Choose Your
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#41e3fe] via-blue-500 to-purple-600 block">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0595f6] via-blue-500 to-purple-600 block">
                 Success Path
               </span>
             </h1>
@@ -63,8 +63,8 @@ const Pricing = () => {
             
             {/* Chrome Extension Pricing */}
             <div className="group relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-[#41e3fe]/20 to-blue-500/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-              <div className="relative bg-white border-2 border-gray-200 rounded-3xl p-12 hover:border-[#41e3fe] hover:shadow-2xl transition-all duration-500 group-hover:scale-105">
+              <div className="absolute inset-0 bg-gradient-to-r from-[#0595f6]/20 to-blue-500/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
+              <div className="relative bg-white border-2 border-gray-200 rounded-3xl p-12 hover:border-[#0595f6] hover:shadow-2xl transition-all duration-500 group-hover:scale-105">
                 
                 <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
                   <div className="bg-gray-100 text-gray-600 px-6 py-3 rounded-full text-sm font-bold shadow-lg">
@@ -74,7 +74,7 @@ const Pricing = () => {
                 
                 <div className="flex items-center justify-between mb-10">
                   <div className="flex items-center gap-4">
-                    <div className="bg-gradient-to-br from-[#41e3fe] to-blue-500 p-4 rounded-2xl shadow-lg group-hover:scale-110 transition-transform duration-300">
+                    <div className="bg-gradient-to-br from-[#0595f6] to-blue-500 p-4 rounded-2xl shadow-lg group-hover:scale-110 transition-transform duration-300">
                       <Bot className="text-white" size={32} />
                     </div>
                     <h3 className="text-4xl font-black text-gray-900">Chrome Extension</h3>
@@ -95,21 +95,21 @@ const Pricing = () => {
                     'Lifetime Updates & Support'
                   ].map((feature, index) => (
                     <li key={index} className="flex items-center gap-4">
-                      <CheckCircle className="text-[#41e3fe] flex-shrink-0" size={24} />
+                      <CheckCircle className="text-[#0595f6] flex-shrink-0" size={24} />
                       <span className="text-gray-700 font-medium text-lg">{feature}</span>
                     </li>
                   ))}
                 </ul>
                 
-                <div className="bg-gradient-to-r from-[#41e3fe]/5 to-blue-500/5 rounded-2xl p-6 mb-8 border border-[#41e3fe]/20">
+                <div className="bg-gradient-to-r from-[#0595f6]/5 to-blue-500/5 rounded-2xl p-6 mb-8 border border-[#0595f6]/20">
                   <div className="flex items-center gap-3 mb-3">
-                    <Award className="text-[#41e3fe]" size={20} />
+                    <Award className="text-[#0595f6]" size={20} />
                     <span className="font-bold text-gray-900">Lifetime Value</span>
                   </div>
                   <p className="text-gray-600">No monthly fees, no hidden costs. Pay once, use forever with free updates.</p>
                 </div>
                 
-                <button className="w-full border-2 border-[#41e3fe] text-[#41e3fe] py-5 rounded-2xl font-bold text-lg hover:bg-[#41e3fe] hover:text-white transition-all duration-300 hover:scale-105 hover:shadow-xl">
+                <button className="w-full border-2 border-[#0595f6] text-[#0595f6] py-5 rounded-2xl font-bold text-lg hover:bg-[#0595f6] hover:text-white transition-all duration-300 hover:scale-105 hover:shadow-xl">
                   Get Extension Now
                 </button>
               </div>
@@ -118,10 +118,10 @@ const Pricing = () => {
             {/* Human Agent Pricing */}
             <div className="group relative">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-600/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
-              <div className="relative bg-gradient-to-br from-[#41e3fe] to-blue-600 text-white rounded-3xl p-12 shadow-2xl hover:shadow-3xl transition-all duration-500 group-hover:scale-105 overflow-hidden">
+              <div className="relative bg-gradient-to-br from-[#0595f6] to-blue-600 text-white rounded-3xl p-12 shadow-2xl hover:shadow-3xl transition-all duration-500 group-hover:scale-105 overflow-hidden">
                 
                 <div className="absolute -top-6 left-1/2 transform -translate-x-1/2">
-                  <div className="bg-white text-[#41e3fe] px-6 py-3 rounded-full text-sm font-bold shadow-lg">
+                  <div className="bg-white text-[#0595f6] px-6 py-3 rounded-full text-sm font-bold shadow-lg">
                     Most Popular
                   </div>
                 </div>
@@ -186,7 +186,7 @@ const Pricing = () => {
                   </div>
                 </div>
                 
-                <button className="w-full bg-white text-[#41e3fe] py-5 rounded-2xl font-bold text-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
+                <button className="w-full bg-white text-[#0595f6] py-5 rounded-2xl font-bold text-lg hover:bg-gray-100 transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
                   Hire Your Agent
                 </button>
               </div>
@@ -200,7 +200,7 @@ const Pricing = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="text-5xl font-black text-gray-900 mb-8">
-              Detailed <span className="text-[#41e3fe]">Comparison</span>
+              Detailed <span className="text-[#0595f6]">Comparison</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
               Compare features and benefits to choose the perfect solution for your needs
@@ -246,7 +246,7 @@ const Pricing = () => {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="text-5xl font-black text-gray-900 mb-8">
-              Frequently Asked <span className="text-[#41e3fe]">Questions</span>
+              Frequently Asked <span className="text-[#0595f6]">Questions</span>
             </h2>
           </div>
 
@@ -283,7 +283,7 @@ const Pricing = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 bg-gradient-to-r from-[#41e3fe] to-blue-500 text-white">
+      <section className="py-24 bg-gradient-to-r from-[#0595f6] to-blue-500 text-white">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-6xl font-black mb-8">
             Ready to Accelerate Your Career?
@@ -291,7 +291,7 @@ const Pricing = () => {
           <p className="text-2xl mb-12 opacity-90">
             Join thousands of professionals who are already landing their dream jobs
           </p>
-          <button className="bg-white text-[#41e3fe] px-12 py-5 rounded-2xl font-bold text-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center gap-3 mx-auto">
+          <button className="bg-white text-[#0595f6] px-12 py-5 rounded-2xl font-bold text-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 flex items-center gap-3 mx-auto">
             <Star size={24} />
             Join Waitlist Now
             <ArrowRight size={24} />

@@ -63,7 +63,7 @@ const Home = () => {
       {/* Revolutionary Hero Section */}
       <section className="py-24 bg-gradient-to-br from-slate-50 via-blue-50/30 to-white relative overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-20 left-10 w-72 h-72 bg-[#41e3fe]/10 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute top-20 left-10 w-72 h-72 bg-[#0595f6]/10 rounded-full blur-3xl animate-pulse"></div>
           <div className="absolute bottom-20 right-10 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
         </div>
 
@@ -71,7 +71,7 @@ const Home = () => {
         {/* Enhanced Trust Indicators */}
         <div className="grid md:grid-cols-4 gap-8 max-w-4xl mx-auto mt-20">
           {[
-            { icon: Award, label: '10,000+ Applications', color: 'text-[#41e3fe]' },
+            { icon: Award, label: '10,000+ Applications', color: 'text-[#0595f6]' },
             { icon: TrendingUp, label: '85% Response Rate', color: 'text-green-500' },
             { icon: Users, label: '2,500+ Users Hired', color: 'text-blue-500' },
             { icon: Clock, label: '48hr Avg Response', color: 'text-purple-500' }
@@ -89,7 +89,7 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
             <h2 className="text-6xl font-black text-gray-900 mb-6">
-              Choose Your <span className="text-[#41e3fe]">Success Path</span>
+              Choose Your <span className="text-[#0595f6]">Success Path</span>
             </h2>
             <p className="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Revolutionary AI automation or expert human precision - both designed to accelerate your career
@@ -99,11 +99,11 @@ const Home = () => {
           <div className="grid lg:grid-cols-2 gap-16 max-w-7xl mx-auto">
             {/* Revolutionary Chrome Extension Card */}
             <div className="group relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-[#41e3fe]/20 to-blue-500/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
+              <div className="absolute inset-0 bg-gradient-to-r from-[#0595f6]/20 to-blue-500/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
               <div className="relative bg-white rounded-3xl p-12 shadow-2xl border border-gray-100 hover:shadow-3xl transition-all duration-500 hover:-translate-y-4 overflow-hidden">
 
                 {/* Animated Background Elements */}
-                <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-[#41e3fe]/10 to-blue-500/10 rounded-full -translate-y-20 translate-x-20 group-hover:scale-150 transition-transform duration-1000"></div>
+                <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-[#0595f6]/10 to-blue-500/10 rounded-full -translate-y-20 translate-x-20 group-hover:scale-150 transition-transform duration-1000"></div>
                 <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-blue-500/10 to-purple-500/10 rounded-full translate-y-16 -translate-x-16 group-hover:scale-125 transition-transform duration-1000 delay-200"></div>
 
                 {/* Revolutionary Browser Interface Mockup */}
@@ -132,9 +132,9 @@ const Home = () => {
                       {/* AI Extension Overlay */}
                       <div className="absolute inset-6 bg-gradient-to-t from-black/80 via-transparent to-transparent rounded-lg"></div>
                       <div className="absolute bottom-8 left-8 right-8">
-                        <div className="bg-white/95 backdrop-blur-xl rounded-2xl p-4 border border-[#41e3fe]/20 shadow-2xl">
+                        <div className="bg-white/95 backdrop-blur-xl rounded-2xl p-4 border border-[#0595f6]/20 shadow-2xl">
                           <div className="flex items-center gap-4 mb-3">
-                            <div className="w-12 h-12 bg-gradient-to-r from-[#41e3fe] to-blue-500 rounded-xl flex items-center justify-center shadow-lg">
+                            <div className="w-12 h-12 bg-gradient-to-r from-[#0595f6] to-blue-500 rounded-xl flex items-center justify-center shadow-lg">
                               <Brain className="text-white" size={20} />
                             </div>
                             <div className="flex-1">
@@ -145,7 +145,7 @@ const Home = () => {
                               <div className="text-sm text-gray-600">AI applying to Software Engineer roles...</div>
                             </div>
                             <div className="text-right">
-                              <div className="text-lg font-bold text-[#41e3fe]">ATS: 94%</div>
+                              <div className="text-lg font-bold text-[#0595f6]">ATS: 94%</div>
                               <div className="text-xs text-gray-500">Match Score</div>
                             </div>
                           </div>
@@ -153,10 +153,10 @@ const Home = () => {
                           <div className="space-y-2">
                             <div className="flex justify-between text-sm">
                               <span className="text-gray-600">AI Fill Progress</span>
-                              <span className="text-[#41e3fe] font-semibold">847/1000 jobs</span>
+                              <span className="text-[#0595f6] font-semibold">847/1000 jobs</span>
                             </div>
                             <div className="w-full bg-gray-200 rounded-full h-2">
-                              <div className="bg-gradient-to-r from-[#41e3fe] to-blue-500 h-2 rounded-full animate-pulse" style={{ width: '84.7%' }}></div>
+                              <div className="bg-gradient-to-r from-[#0595f6] to-blue-500 h-2 rounded-full animate-pulse" style={{ width: '84.7%' }}></div>
                             </div>
                           </div>
                         </div>
@@ -168,7 +168,7 @@ const Home = () => {
                 {/* Header */}
                 <div className="flex items-center gap-6 mb-8">
                   <div className="relative">
-                    <div className="bg-gradient-to-br from-[#41e3fe] to-blue-500 p-5 rounded-3xl shadow-2xl group-hover:shadow-3xl transition-all duration-500 group-hover:scale-110">
+                    <div className="bg-gradient-to-br from-[#0595f6] to-blue-500 p-5 rounded-3xl shadow-2xl group-hover:shadow-3xl transition-all duration-500 group-hover:scale-110">
                       <Chrome className="text-white" size={36} />
                     </div>
                     <div className="absolute -top-2 -right-2 w-6 h-6 bg-green-500 rounded-full border-3 border-white flex items-center justify-center">
@@ -189,9 +189,9 @@ const Home = () => {
                     { icon: Brain, title: 'AI Fill Forms Intelligently', desc: 'Smart auto-completion technology' },
                     { icon: Target, title: 'Precision Job Matching', desc: 'Advanced AI-powered targeting' }
                   ].map((feature, index) => (
-                    <div key={index} className="group/item flex items-center gap-4 p-4 bg-gradient-to-r from-gray-50 to-blue-50/50 rounded-2xl hover:from-[#41e3fe]/5 hover:to-blue-500/5 transition-all duration-300 hover:scale-105 border border-gray-100 hover:border-[#41e3fe]/20">
-                      <div className="bg-[#41e3fe]/10 p-3 rounded-xl group-hover/item:bg-[#41e3fe]/20 transition-colors">
-                        <feature.icon className="text-[#41e3fe]" size={20} />
+                    <div key={index} className="group/item flex items-center gap-4 p-4 bg-gradient-to-r from-gray-50 to-blue-50/50 rounded-2xl hover:from-[#0595f6]/5 hover:to-blue-500/5 transition-all duration-300 hover:scale-105 border border-gray-100 hover:border-[#0595f6]/20">
+                      <div className="bg-[#0595f6]/10 p-3 rounded-xl group-hover/item:bg-[#0595f6]/20 transition-colors">
+                        <feature.icon className="text-[#0595f6]" size={20} />
                       </div>
                       <div className="flex-1">
                         <div className="font-bold text-gray-900 mb-1">{feature.title}</div>
@@ -203,18 +203,18 @@ const Home = () => {
 
                 {/* Pricing */}
                 <div className="bg-gradient-to-r from-gray-50 to-blue-50/50 rounded-3xl p-8 mb-8 border border-gray-100 relative overflow-hidden">
-                  <div className="absolute top-0 right-0 w-24 h-24 bg-[#41e3fe]/10 rounded-full -translate-y-12 translate-x-12"></div>
+                  <div className="absolute top-0 right-0 w-24 h-24 bg-[#0595f6]/10 rounded-full -translate-y-12 translate-x-12"></div>
                   <div className="text-center relative">
                     <div className="flex items-baseline justify-center gap-3 mb-3">
                       <span className="text-5xl font-black text-gray-900">${extensionPrice}</span>
                       <span className="text-gray-600 font-semibold">one-time</span>
                     </div>
-                    <div className="text-[#41e3fe] font-bold text-lg mb-2">Lifetime Access • No Subscriptions</div>
+                    <div className="text-[#0595f6] font-bold text-lg mb-2">Lifetime Access • No Subscriptions</div>
                     <div className="text-gray-600">Unlimited applications • Free updates forever</div>
                   </div>
                 </div>
 
-                <button className="w-full bg-gradient-to-r from-[#41e3fe] to-blue-500 text-white py-5 rounded-2xl font-bold text-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 flex items-center justify-center gap-3 group/btn relative overflow-hidden">
+                <button className="w-full bg-gradient-to-r from-[#0595f6] to-blue-500 text-white py-5 rounded-2xl font-bold text-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 flex items-center justify-center gap-3 group/btn relative overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-500"></div>
                   <Download size={24} className="relative z-10" />
                   <span className="relative z-10">Get Extension Now</span>
@@ -373,12 +373,12 @@ const Home = () => {
       <section className="py-24 bg-gradient-to-br from-white via-gray-50/50 to-blue-50/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-[#41e3fe]/10 to-blue-500/10 text-[#41e3fe] px-6 py-3 rounded-full text-sm font-bold mb-8 border border-[#41e3fe]/20">
+            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-[#0595f6]/10 to-blue-500/10 text-[#0595f6] px-6 py-3 rounded-full text-sm font-bold mb-8 border border-[#0595f6]/20">
               <Lightbulb size={18} />
               Revolutionary Technology
             </div>
             <h2 className="text-6xl font-black text-gray-900 mb-8">
-              The Future of <span className="text-[#41e3fe]">Job Applications</span>
+              The Future of <span className="text-[#0595f6]">Job Applications</span>
             </h2>
             <p className="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Combining cutting-edge AI automation with human expertise to revolutionize how you find and land your dream job
@@ -391,7 +391,7 @@ const Home = () => {
                 icon: Zap,
                 title: 'Lightning Fast AI Apply',
                 description: 'Apply to 1000+ relevant jobs in minutes with our revolutionary one-click technology. Our AI handles the repetitive work while you focus on interview preparation.',
-                gradient: 'from-[#41e3fe] to-blue-500'
+                gradient: 'from-[#0595f6] to-blue-500'
               },
               {
                 icon: Target,
@@ -457,7 +457,7 @@ const Home = () => {
                   <img
                     src={story.image}
                     alt={story.name}
-                    className="w-16 h-16 rounded-full object-cover border-2 border-[#41e3fe]"
+                    className="w-16 h-16 rounded-full object-cover border-2 border-[#0595f6]"
                   />
                   <div>
                     <h4 className="font-bold text-gray-900 text-lg">{story.name}</h4>
@@ -472,7 +472,7 @@ const Home = () => {
                 <p className="text-gray-700 italic mb-6 text-lg leading-relaxed">
                   "{story.quote}"
                 </p>
-                <div className="text-[#41e3fe] font-bold text-lg">
+                <div className="text-[#0595f6] font-bold text-lg">
                   {story.result}
                 </div>
               </div>
@@ -482,7 +482,7 @@ const Home = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-gradient-to-r from-[#41e3fe]/10 via-blue-50/50 to-purple-50/30">
+      <section className="py-20 bg-gradient-to-r from-[#0595f6]/10 via-blue-50/50 to-purple-50/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             {[
@@ -492,7 +492,7 @@ const Home = () => {
               { number: '48hrs', label: 'Avg. Response', sublabel: 'From application' }
             ].map((stat, index) => (
               <div key={index} className="group hover:scale-110 transition-all duration-500">
-                <div className="text-6xl font-black text-[#41e3fe] mb-4">{stat.number}</div>
+                <div className="text-6xl font-black text-[#0595f6] mb-4">{stat.number}</div>
                 <div className="text-gray-700 font-bold text-xl mb-2">{stat.label}</div>
                 <div className="text-gray-500">{stat.sublabel}</div>
               </div>
@@ -503,20 +503,20 @@ const Home = () => {
 
       {/* Waitlist Section */}
       <section id="waitlist" className="py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-[#41e3fe]/10 to-blue-500/10"></div>
-        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#41e3fe] to-blue-500"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-[#0595f6]/10 to-blue-500/10"></div>
+        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#0595f6] to-blue-500"></div>
 
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative">
           <div className="inline-flex items-center gap-3 bg-white/10 text-white px-6 py-3 rounded-full text-sm font-bold mb-10 backdrop-blur-sm">
-            <div className="w-2 h-2 bg-[#41e3fe] rounded-full animate-ping"></div>
+            <div className="w-2 h-2 bg-[#0595f6] rounded-full animate-ping"></div>
             <Rocket size={18} />
             Join the Revolution
-            <div className="w-2 h-2 bg-[#41e3fe] rounded-full animate-ping"></div>
+            <div className="w-2 h-2 bg-[#0595f6] rounded-full animate-ping"></div>
           </div>
 
           <h2 className="text-6xl md:text-7xl font-black mb-10 leading-tight">
             Ready to Transform Your
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#41e3fe] to-blue-400 block">
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#0595f6] to-blue-400 block">
               Job Search Forever?
             </span>
           </h2>
@@ -534,7 +534,7 @@ const Home = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your professional email"
-                  className="w-full px-8 py-5 rounded-2xl text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-[#41e3fe]/50 bg-white/95 backdrop-blur-sm text-xl font-medium"
+                  className="w-full px-8 py-5 rounded-2xl text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-4 focus:ring-[#0595f6]/50 bg-white/95 backdrop-blur-sm text-xl font-medium"
                   required
                 />
               </div>
@@ -543,7 +543,7 @@ const Home = () => {
                 disabled={isSubmitted}
                 className={`px-10 py-5 rounded-2xl font-bold transition-all duration-500 text-xl ${isSubmitted
                     ? 'bg-green-500 text-white shadow-2xl scale-105'
-                    : 'bg-gradient-to-r from-[#41e3fe] to-blue-500 text-white hover:shadow-2xl hover:scale-110'
+                    : 'bg-gradient-to-r from-[#0595f6] to-blue-500 text-white hover:shadow-2xl hover:scale-110'
                   }`}
               >
                 {isSubmitted ? (
@@ -568,7 +568,7 @@ const Home = () => {
               { number: '50% OFF', label: 'Early bird pricing' }
             ].map((item, index) => (
               <div key={index} className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10 hover:scale-105 transition-all duration-300">
-                <div className="text-4xl font-black text-[#41e3fe] mb-3">{item.number}</div>
+                <div className="text-4xl font-black text-[#0595f6] mb-3">{item.number}</div>
                 <div className="text-gray-300 text-lg">{item.label}</div>
               </div>
             ))}
