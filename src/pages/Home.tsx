@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import {
   Chrome,
   Users,
@@ -33,13 +33,13 @@ import {
   Database,
   Network,
   Eye,
-  Lightbulb
-} from 'lucide-react';
-import HomeComponent from '../components/home-component';
+  Lightbulb,
+} from "lucide-react";
+import HomeComponent from "../components/home-component";
 
 const Home = () => {
   const [jobCount, setJobCount] = useState(10);
-  const [email, setEmail] = useState('');
+  const [email, setEmail] = useState("");
   const [isSubmitted, setIsSubmitted] = useState(false);
 
   const agentPrice = jobCount * 0.5;
@@ -71,14 +71,35 @@ const Home = () => {
         {/* Enhanced Trust Indicators */}
         <div className="grid md:grid-cols-4 gap-8 max-w-4xl mx-auto mt-20">
           {[
-            { icon: Award, label: '10,000+ Applications', color: 'text-[#0595f6]' },
-            { icon: TrendingUp, label: '85% Response Rate', color: 'text-green-500' },
-            { icon: Users, label: '2,500+ Users Hired', color: 'text-blue-500' },
-            { icon: Clock, label: '48hr Avg Response', color: 'text-purple-500' }
+            {
+              icon: Award,
+              label: "10,000+ Applications",
+              color: "text-[#0595f6]",
+            },
+            {
+              icon: TrendingUp,
+              label: "85% Response Rate",
+              color: "text-green-500",
+            },
+            {
+              icon: Users,
+              label: "2,500+ Users Hired",
+              color: "text-blue-500",
+            },
+            {
+              icon: Clock,
+              label: "48hr Avg Response",
+              color: "text-purple-500",
+            },
           ].map((item, index) => (
-            <div key={index} className="group bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-gray-100 hover:shadow-xl transition-all duration-300 hover:scale-105">
+            <div
+              key={index}
+              className="group bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-gray-100 hover:shadow-xl transition-all duration-300 hover:scale-105"
+            >
               <item.icon className={`${item.color} mb-3 mx-auto`} size={32} />
-              <div className="font-bold text-gray-900 text-lg">{item.label}</div>
+              <div className="font-bold text-gray-900 text-lg">
+                {item.label}
+              </div>
             </div>
           ))}
         </div>
@@ -92,7 +113,8 @@ const Home = () => {
               Choose Your <span className="text-[#0595f6]">Success Path</span>
             </h2>
             <p className="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Revolutionary AI automation or expert human precision - both designed to accelerate your career
+              Revolutionary AI automation or expert human precision - both
+              designed to accelerate your career
             </p>
           </div>
 
@@ -101,7 +123,6 @@ const Home = () => {
             <div className="group relative">
               <div className="absolute inset-0 bg-gradient-to-r from-[#0595f6]/20 to-blue-500/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
               <div className="relative bg-white rounded-3xl p-12 shadow-2xl border border-gray-100 hover:shadow-3xl transition-all duration-500 hover:-translate-y-4 overflow-hidden">
-
                 {/* Animated Background Elements */}
                 <div className="absolute top-0 right-0 w-40 h-40 bg-gradient-to-br from-[#0595f6]/10 to-blue-500/10 rounded-full -translate-y-20 translate-x-20 group-hover:scale-150 transition-transform duration-1000"></div>
                 <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-blue-500/10 to-purple-500/10 rounded-full translate-y-16 -translate-x-16 group-hover:scale-125 transition-transform duration-1000 delay-200"></div>
@@ -117,7 +138,9 @@ const Home = () => {
                         <div className="w-3 h-3 bg-green-500 rounded-full"></div>
                       </div>
                       <div className="flex-1 bg-gray-700 rounded-lg px-4 py-2 ml-4">
-                        <div className="text-gray-300 text-sm">linkedin.com/jobs</div>
+                        <div className="text-gray-300 text-sm">
+                          linkedin.com/jobs
+                        </div>
                       </div>
                     </div>
 
@@ -142,21 +165,34 @@ const Home = () => {
                                 JobsForce AI Extension
                                 <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
                               </div>
-                              <div className="text-sm text-gray-600">AI applying to Software Engineer roles...</div>
+                              <div className="text-sm text-gray-600">
+                                AI applying to Software Engineer roles...
+                              </div>
                             </div>
                             <div className="text-right">
-                              <div className="text-lg font-bold text-[#0595f6]">ATS: 94%</div>
-                              <div className="text-xs text-gray-500">Match Score</div>
+                              <div className="text-lg font-bold text-[#0595f6]">
+                                ATS: 94%
+                              </div>
+                              <div className="text-xs text-gray-500">
+                                Match Score
+                              </div>
                             </div>
                           </div>
 
                           <div className="space-y-2">
                             <div className="flex justify-between text-sm">
-                              <span className="text-gray-600">AI Fill Progress</span>
-                              <span className="text-[#0595f6] font-semibold">847/1000 jobs</span>
+                              <span className="text-gray-600">
+                                AI Fill Progress
+                              </span>
+                              <span className="text-[#0595f6] font-semibold">
+                                847/1000 jobs
+                              </span>
                             </div>
                             <div className="w-full bg-gray-200 rounded-full h-2">
-                              <div className="bg-gradient-to-r from-[#0595f6] to-blue-500 h-2 rounded-full animate-pulse" style={{ width: '84.7%' }}></div>
+                              <div
+                                className="bg-gradient-to-r from-[#0595f6] to-blue-500 h-2 rounded-full animate-pulse"
+                                style={{ width: "84.7%" }}
+                              ></div>
                             </div>
                           </div>
                         </div>
@@ -176,29 +212,59 @@ const Home = () => {
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-4xl font-black text-gray-900 mb-2">AI Chrome Extension</h3>
-                    <p className="text-gray-600 font-semibold text-lg">Revolutionary automation at your fingertips</p>
+                    <h3 className="text-4xl font-black text-gray-900 mb-2">
+                      AI Chrome Extension
+                    </h3>
+                    <p className="text-gray-600 font-semibold text-lg">
+                      Revolutionary automation at your fingertips
+                    </p>
                   </div>
                 </div>
 
                 {/* Enhanced Features */}
                 <div className="space-y-4 mb-10">
                   {[
-                    { icon: Zap, title: 'One-Click AI Apply to 1000+ Jobs', desc: 'Lightning-fast bulk applications' },
-                    { icon: Gauge, title: 'ATS Score on All LinkedIn Jobs', desc: 'Real-time compatibility scoring' },
-                    { icon: Brain, title: 'AI Fill Forms Intelligently', desc: 'Smart auto-completion technology' },
-                    { icon: Target, title: 'Precision Job Matching', desc: 'Advanced AI-powered targeting' }
-                  ].map((feature, index) => (
-                    <div key={index} className="group/item flex items-center gap-4 p-4 bg-gradient-to-r from-gray-50 to-blue-50/50 rounded-2xl hover:from-[#0595f6]/5 hover:to-blue-500/5 transition-all duration-300 hover:scale-105 border border-gray-100 hover:border-[#0595f6]/20">
-                      <div className="bg-[#0595f6]/10 p-3 rounded-xl group-hover/item:bg-[#0595f6]/20 transition-colors">
-                        <feature.icon className="text-[#0595f6]" size={20} />
+                    {
+                      icon: Zap,
+                      title: "One-Click AI Apply to 1000+ Jobs",
+                      desc: "Lightning-fast bulk applications",
+                    },
+                    {
+                      icon: Gauge,
+                      title: "ATS Score on All LinkedIn Jobs",
+                      desc: "Real-time compatibility scoring",
+                    },
+                    {
+                      icon: Brain,
+                      title: "AI Fill Forms Intelligently",
+                      desc: "Smart auto-completion technology",
+                    },
+                    {
+                      icon: Target,
+                      title: "Precision Job Matching",
+                      desc: "Advanced AI-powered targeting",
+                    },
+                  ].map((feature, index) => {
+                    const Icon = feature.icon;
+                    return (
+                      <div
+                        key={index}
+                        className="group/item flex items-center gap-4 p-4 bg-gradient-to-r from-gray-50 to-blue-50/50 rounded-2xl hover:from-[#0595f6]/5 hover:to-blue-500/5 transition-all duration-300 hover:scale-105 border border-gray-100 hover:border-[#0595f6]/20"
+                      >
+                        <div className="bg-[#0595f6]/10 p-3 rounded-xl group-hover/item:bg-[#0595f6]/20 transition-colors">
+                          <Icon className="text-[#0595f6]" size={20} />
+                        </div>
+                        <div className="flex-1">
+                          <div className="font-bold text-gray-900 mb-1">
+                            {feature.title}
+                          </div>
+                          <div className="text-sm text-gray-600">
+                            {feature.desc}
+                          </div>
+                        </div>
                       </div>
-                      <div className="flex-1">
-                        <div className="font-bold text-gray-900 mb-1">{feature.title}</div>
-                        <div className="text-sm text-gray-600">{feature.desc}</div>
-                      </div>
-                    </div>
-                  ))}
+                    );
+                  })}
                 </div>
 
                 {/* Pricing */}
@@ -206,11 +272,19 @@ const Home = () => {
                   <div className="absolute top-0 right-0 w-24 h-24 bg-[#0595f6]/10 rounded-full -translate-y-12 translate-x-12"></div>
                   <div className="text-center relative">
                     <div className="flex items-baseline justify-center gap-3 mb-3">
-                      <span className="text-5xl font-black text-gray-900">${extensionPrice}</span>
-                      <span className="text-gray-600 font-semibold">one-time</span>
+                      <span className="text-5xl font-black text-gray-900">
+                        ${extensionPrice}
+                      </span>
+                      <span className="text-gray-600 font-semibold">
+                        one-time
+                      </span>
                     </div>
-                    <div className="text-[#0595f6] font-bold text-lg mb-2">Lifetime Access • No Subscriptions</div>
-                    <div className="text-gray-600">Unlimited applications • Free updates forever</div>
+                    <div className="text-[#0595f6] font-bold text-lg mb-2">
+                      Lifetime Access • No Subscriptions
+                    </div>
+                    <div className="text-gray-600">
+                      Unlimited applications • Free updates forever
+                    </div>
                   </div>
                 </div>
 
@@ -218,7 +292,10 @@ const Home = () => {
                   <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-500"></div>
                   <Download size={24} className="relative z-10" />
                   <span className="relative z-10">Get Extension Now</span>
-                  <ArrowRight size={20} className="group-hover/btn:translate-x-2 transition-transform relative z-10" />
+                  <ArrowRight
+                    size={20}
+                    className="group-hover/btn:translate-x-2 transition-transform relative z-10"
+                  />
                 </button>
               </div>
             </div>
@@ -227,7 +304,6 @@ const Home = () => {
             <div className="group relative">
               <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-purple-600/20 rounded-3xl blur-xl group-hover:blur-2xl transition-all duration-500"></div>
               <div className="relative bg-white rounded-3xl p-12 shadow-2xl border border-gray-100 hover:shadow-3xl transition-all duration-500 hover:-translate-y-4 overflow-hidden">
-
                 {/* Animated Background Elements */}
                 <div className="absolute top-0 left-0 w-40 h-40 bg-gradient-to-br from-blue-500/10 to-purple-600/10 rounded-full -translate-y-20 -translate-x-20 group-hover:scale-150 transition-transform duration-1000"></div>
                 <div className="absolute bottom-0 right-0 w-32 h-32 bg-gradient-to-tl from-purple-500/10 to-pink-500/10 rounded-full translate-y-16 translate-x-16 group-hover:scale-125 transition-transform duration-1000 delay-200"></div>
@@ -239,9 +315,13 @@ const Home = () => {
                     <div className="flex items-center justify-between mb-6">
                       <div className="flex items-center gap-3">
                         <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                        <span className="text-white font-semibold">Agent Dashboard - Live</span>
+                        <span className="text-white font-semibold">
+                          Agent Dashboard - Live
+                        </span>
                       </div>
-                      <div className="text-blue-300 text-sm">Real-time Activity</div>
+                      <div className="text-blue-300 text-sm">
+                        Real-time Activity
+                      </div>
                     </div>
 
                     {/* Agent Interface */}
@@ -270,18 +350,24 @@ const Home = () => {
                                 Sarah M. - Your Dedicated Agent
                                 <Activity className="text-blue-500" size={16} />
                               </div>
-                              <div className="text-sm text-gray-600">Applied to 12 jobs today • 3 responses received</div>
+                              <div className="text-sm text-gray-600">
+                                Applied to 12 jobs today • 3 responses received
+                              </div>
                             </div>
                           </div>
 
                           <div className="space-y-2">
                             <div className="flex items-center gap-2 text-sm">
                               <div className="w-2 h-2 bg-blue-500 rounded-full animate-pulse"></div>
-                              <span className="text-gray-700">Crafting personalized cover letter for Meta...</span>
+                              <span className="text-gray-700">
+                                Crafting personalized cover letter for Meta...
+                              </span>
                             </div>
                             <div className="flex items-center gap-2 text-sm">
                               <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                              <span className="text-gray-700">Interview scheduled with Google for tomorrow</span>
+                              <span className="text-gray-700">
+                                Interview scheduled with Google for tomorrow
+                              </span>
                             </div>
                           </div>
                         </div>
@@ -301,26 +387,53 @@ const Home = () => {
                     </div>
                   </div>
                   <div>
-                    <h3 className="text-4xl font-black text-gray-900 mb-2">Human Agent Service</h3>
-                    <p className="text-gray-600 font-semibold text-lg">Expert humans working for your success</p>
+                    <h3 className="text-4xl font-black text-gray-900 mb-2">
+                      Human Agent Service
+                    </h3>
+                    <p className="text-gray-600 font-semibold text-lg">
+                      Expert humans working for your success
+                    </p>
                   </div>
                 </div>
 
                 {/* Enhanced Features */}
                 <div className="space-y-4 mb-10">
                   {[
-                    { icon: MessageSquare, title: 'Personalized Cover Letters', desc: 'Tailored for each application' },
-                    { icon: Briefcase, title: 'Strategic Job Matching', desc: 'Expert timing and targeting' },
-                    { icon: Star, title: 'Interview Preparation', desc: 'Coaching and practice sessions' },
-                    { icon: BarChart3, title: 'Daily Progress Reports', desc: 'Detailed insights and analytics' }
+                    {
+                      icon: MessageSquare,
+                      title: "Personalized Cover Letters",
+                      desc: "Tailored for each application",
+                    },
+                    {
+                      icon: Briefcase,
+                      title: "Strategic Job Matching",
+                      desc: "Expert timing and targeting",
+                    },
+                    {
+                      icon: Star,
+                      title: "Interview Preparation",
+                      desc: "Coaching and practice sessions",
+                    },
+                    {
+                      icon: BarChart3,
+                      title: "Daily Progress Reports",
+                      desc: "Detailed insights and analytics",
+                    },
                   ].map((feature, index) => (
-                    <div key={index} className="group/item flex items-center gap-4 p-4 bg-gradient-to-r from-blue-50 to-purple-50/50 rounded-2xl hover:from-blue-500/5 hover:to-purple-500/5 transition-all duration-300 hover:scale-105 border border-gray-100 hover:border-blue-500/20">
+                    <div
+                      key={index}
+                      className="group/item flex items-center gap-4 p-4 bg-gradient-to-r from-blue-50 to-purple-50/50 rounded-2xl hover:from-blue-500/5 hover:to-purple-500/5 transition-all duration-300 hover:scale-105 border border-gray-100 hover:border-blue-500/20"
+                    >
                       <div className="bg-blue-500/10 p-3 rounded-xl group-hover/item:bg-blue-500/20 transition-colors">
                         <feature.icon className="text-blue-600" size={20} />
                       </div>
                       <div className="flex-1">
-                        <div className="font-bold text-gray-900 mb-1">{feature.title}</div>
-                        <div className="text-sm text-gray-600">{feature.desc}</div>
+                        <div className="font-bold text-gray-900 mb-1">
+                          {feature.title}
+                        </div>
+                        <div className="text-sm text-gray-600">
+                          {feature.desc}
+                        </div>
                       </div>
                     </div>
                   ))}
@@ -331,10 +444,16 @@ const Home = () => {
                   <div className="absolute top-0 left-0 w-24 h-24 bg-blue-500/10 rounded-full -translate-y-12 -translate-x-12"></div>
                   <div className="text-center mb-6 relative">
                     <div className="flex items-baseline justify-center gap-3 mb-3">
-                      <span className="text-5xl font-black text-gray-900">${agentPrice.toFixed(1)}</span>
-                      <span className="text-gray-600 font-semibold">total cost</span>
+                      <span className="text-5xl font-black text-gray-900">
+                        ${agentPrice.toFixed(1)}
+                      </span>
+                      <span className="text-gray-600 font-semibold">
+                        total cost
+                      </span>
                     </div>
-                    <div className="text-blue-600 font-bold text-lg mb-2">$0.50 per job application • Pay as you go</div>
+                    <div className="text-blue-600 font-bold text-lg mb-2">
+                      $0.50 per job application • Pay as you go
+                    </div>
                   </div>
 
                   <div className="flex items-center justify-center gap-8 bg-white rounded-2xl p-6 shadow-lg">
@@ -345,8 +464,12 @@ const Home = () => {
                       <Minus size={20} />
                     </button>
                     <div className="text-center">
-                      <div className="text-3xl font-black text-gray-900">{jobCount}</div>
-                      <div className="text-sm text-gray-600 font-semibold">job applications</div>
+                      <div className="text-3xl font-black text-gray-900">
+                        {jobCount}
+                      </div>
+                      <div className="text-sm text-gray-600 font-semibold">
+                        job applications
+                      </div>
                     </div>
                     <button
                       onClick={() => handleJobCountChange(5)}
@@ -361,7 +484,10 @@ const Home = () => {
                   <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-pink-600 opacity-0 group-hover/btn:opacity-100 transition-opacity duration-500"></div>
                   <Users size={24} className="relative z-10" />
                   <span className="relative z-10">Hire Your Agent</span>
-                  <ArrowRight size={20} className="group-hover/btn:translate-x-2 transition-transform relative z-10" />
+                  <ArrowRight
+                    size={20}
+                    className="group-hover/btn:translate-x-2 transition-transform relative z-10"
+                  />
                 </button>
               </div>
             </div>
@@ -378,10 +504,12 @@ const Home = () => {
               Revolutionary Technology
             </div>
             <h2 className="text-6xl font-black text-gray-900 mb-8">
-              The Future of <span className="text-[#0595f6]">Job Applications</span>
+              The Future of{" "}
+              <span className="text-[#0595f6]">Job Applications</span>
             </h2>
             <p className="text-2xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-              Combining cutting-edge AI automation with human expertise to revolutionize how you find and land your dream job
+              Combining cutting-edge AI automation with human expertise to
+              revolutionize how you find and land your dream job
             </p>
           </div>
 
@@ -389,31 +517,46 @@ const Home = () => {
             {[
               {
                 icon: Zap,
-                title: 'Lightning Fast AI Apply',
-                description: 'Apply to 1000+ relevant jobs in minutes with our revolutionary one-click technology. Our AI handles the repetitive work while you focus on interview preparation.',
-                gradient: 'from-[#0595f6] to-blue-500'
+                title: "Lightning Fast AI Apply",
+                description:
+                  "Apply to 1000+ relevant jobs in minutes with our revolutionary one-click technology. Our AI handles the repetitive work while you focus on interview preparation.",
+                gradient: "from-[#0595f6] to-blue-500",
               },
               {
                 icon: Target,
-                title: 'Precision ATS Scoring',
-                description: 'Get real-time ATS compatibility scores on every LinkedIn job. Advanced algorithms analyze requirements and match them with your skills for maximum success.',
-                gradient: 'from-blue-500 to-purple-500'
+                title: "Precision ATS Scoring",
+                description:
+                  "Get real-time ATS compatibility scores on every LinkedIn job. Advanced algorithms analyze requirements and match them with your skills for maximum success.",
+                gradient: "from-blue-500 to-purple-500",
               },
               {
                 icon: Shield,
-                title: 'Enterprise-Grade Security',
-                description: 'Your personal data is protected with bank-level encryption. We never store sensitive information and follow strict privacy protocols.',
-                gradient: 'from-purple-500 to-pink-500'
-              }
-            ].map((feature, index) => (
-              <div key={index} className="group text-center hover:scale-110 transition-all duration-500">
-                <div className={`bg-gradient-to-br ${feature.gradient}/10 w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-8 group-hover:shadow-2xl transition-all duration-500 group-hover:scale-110 border border-gray-100`}>
-                  <feature.icon className={`bg-gradient-to-r ${feature.gradient} bg-clip-text text-transparent`} size={40} />
+                title: "Enterprise-Grade Security",
+                description:
+                  "Your personal data is protected with bank-level encryption. We never store sensitive information and follow strict privacy protocols.",
+                gradient: "from-purple-500 to-pink-500",
+              },
+            ].map((feature, index) => {
+              const Icon = feature.icon;
+              return (
+                <div
+                  key={index}
+                  className="group text-center hover:scale-110 transition-all duration-500"
+                >
+                  <div
+                    className={`bg-gradient-to-br ${feature.gradient}/10 w-24 h-24 rounded-3xl flex items-center justify-center mx-auto mb-8 group-hover:shadow-2xl transition-all duration-500 group-hover:scale-110 border border-gray-100`}
+                  >
+                    <Icon />
+                  </div>
+                  <h3 className="text-3xl font-bold text-gray-900 mb-6">
+                    {feature.title}
+                  </h3>
+                  <p className="text-gray-600 leading-relaxed text-lg">
+                    {feature.description}
+                  </p>
                 </div>
-                <h3 className="text-3xl font-bold text-gray-900 mb-6">{feature.title}</h3>
-                <p className="text-gray-600 leading-relaxed text-lg">{feature.description}</p>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </div>
       </section>
@@ -422,37 +565,49 @@ const Home = () => {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <h2 className="text-6xl font-black text-gray-900 mb-8">Success Stories</h2>
+            <h2 className="text-6xl font-black text-gray-900 mb-8">
+              Success Stories
+            </h2>
             <p className="text-2xl text-gray-600 max-w-3xl mx-auto">
-              Real results from real professionals who transformed their job search with JobsForce.ai
+              Real results from real professionals who transformed their job
+              search with JobsForce.ai
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-10">
             {[
               {
-                name: 'Sarah Chen',
-                role: 'Software Engineer',
-                image: 'https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150',
-                quote: 'Got 3 interviews in the first week using the Chrome extension. The AI Apply feature saved me hours of repetitive work!',
-                result: 'Landed job at Google • $180K salary'
+                name: "Sarah Chen",
+                role: "Software Engineer",
+                image:
+                  "https://images.pexels.com/photos/774909/pexels-photo-774909.jpeg?auto=compress&cs=tinysrgb&w=150",
+                quote:
+                  "Got 3 interviews in the first week using the Chrome extension. The AI Apply feature saved me hours of repetitive work!",
+                result: "Landed job at Google • $180K salary",
               },
               {
-                name: 'Marcus Johnson',
-                role: 'Product Manager',
-                image: 'https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150',
-                quote: 'The human agent service was incredible. They crafted personalized cover letters that got me noticed by top companies.',
-                result: 'Landed job at Meta • $220K salary'
+                name: "Marcus Johnson",
+                role: "Product Manager",
+                image:
+                  "https://images.pexels.com/photos/1222271/pexels-photo-1222271.jpeg?auto=compress&cs=tinysrgb&w=150",
+                quote:
+                  "The human agent service was incredible. They crafted personalized cover letters that got me noticed by top companies.",
+                result: "Landed job at Meta • $220K salary",
               },
               {
-                name: 'Emily Rodriguez',
-                role: 'UX Designer',
-                image: 'https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=150',
-                quote: 'Applied to 50+ jobs in one day with the extension. The ATS scoring was so precise - every application was relevant to my skills.',
-                result: 'Landed job at Airbnb • $160K salary'
-              }
+                name: "Emily Rodriguez",
+                role: "UX Designer",
+                image:
+                  "https://images.pexels.com/photos/1181686/pexels-photo-1181686.jpeg?auto=compress&cs=tinysrgb&w=150",
+                quote:
+                  "Applied to 50+ jobs in one day with the extension. The ATS scoring was so precise - every application was relevant to my skills.",
+                result: "Landed job at Airbnb • $160K salary",
+              },
             ].map((story, index) => (
-              <div key={index} className="group bg-gradient-to-br from-white to-gray-50 rounded-3xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-500 hover:scale-105">
+              <div
+                key={index}
+                className="group bg-gradient-to-br from-white to-gray-50 rounded-3xl p-8 shadow-xl border border-gray-100 hover:shadow-2xl transition-all duration-500 hover:scale-105"
+              >
                 <div className="flex items-center gap-4 mb-6">
                   <img
                     src={story.image}
@@ -460,13 +615,19 @@ const Home = () => {
                     className="w-16 h-16 rounded-full object-cover border-2 border-[#0595f6]"
                   />
                   <div>
-                    <h4 className="font-bold text-gray-900 text-lg">{story.name}</h4>
+                    <h4 className="font-bold text-gray-900 text-lg">
+                      {story.name}
+                    </h4>
                     <p className="text-gray-600">{story.role}</p>
                   </div>
                 </div>
                 <div className="flex mb-4">
                   {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="text-yellow-400 fill-current" size={18} />
+                    <Star
+                      key={i}
+                      className="text-yellow-400 fill-current"
+                      size={18}
+                    />
                   ))}
                 </div>
                 <p className="text-gray-700 italic mb-6 text-lg leading-relaxed">
@@ -486,14 +647,37 @@ const Home = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8 text-center">
             {[
-              { number: '10,000+', label: 'Applications Sent', sublabel: 'Across all platforms' },
-              { number: '85%', label: 'Response Rate', sublabel: 'Industry leading' },
-              { number: '2,500+', label: 'Users Hired', sublabel: 'Dream jobs secured' },
-              { number: '48hrs', label: 'Avg. Response', sublabel: 'From application' }
+              {
+                number: "10,000+",
+                label: "Applications Sent",
+                sublabel: "Across all platforms",
+              },
+              {
+                number: "85%",
+                label: "Response Rate",
+                sublabel: "Industry leading",
+              },
+              {
+                number: "2,500+",
+                label: "Users Hired",
+                sublabel: "Dream jobs secured",
+              },
+              {
+                number: "48hrs",
+                label: "Avg. Response",
+                sublabel: "From application",
+              },
             ].map((stat, index) => (
-              <div key={index} className="group hover:scale-110 transition-all duration-500">
-                <div className="text-6xl font-black text-[#0595f6] mb-4">{stat.number}</div>
-                <div className="text-gray-700 font-bold text-xl mb-2">{stat.label}</div>
+              <div
+                key={index}
+                className="group hover:scale-110 transition-all duration-500"
+              >
+                <div className="text-6xl font-black text-[#0595f6] mb-4">
+                  {stat.number}
+                </div>
+                <div className="text-gray-700 font-bold text-xl mb-2">
+                  {stat.label}
+                </div>
                 <div className="text-gray-500">{stat.sublabel}</div>
               </div>
             ))}
@@ -502,7 +686,10 @@ const Home = () => {
       </section>
 
       {/* Waitlist Section */}
-      <section id="waitlist" className="py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white relative overflow-hidden">
+      <section
+        id="waitlist"
+        className="py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white relative overflow-hidden"
+      >
         <div className="absolute inset-0 bg-gradient-to-r from-[#0595f6]/10 to-blue-500/10"></div>
         <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#0595f6] to-blue-500"></div>
 
@@ -522,11 +709,15 @@ const Home = () => {
           </h2>
 
           <p className="text-2xl text-gray-300 mb-16 max-w-4xl mx-auto leading-relaxed">
-            Join over 5,000 ambitious professionals who are already getting more interviews,
-            landing better jobs, and accelerating their careers with JobsForce.ai
+            Join over 5,000 ambitious professionals who are already getting more
+            interviews, landing better jobs, and accelerating their careers with
+            JobsForce.ai
           </p>
 
-          <form onSubmit={handleWaitlistSubmit} className="max-w-2xl mx-auto mb-16">
+          <form
+            onSubmit={handleWaitlistSubmit}
+            className="max-w-2xl mx-auto mb-16"
+          >
             <div className="flex flex-col sm:flex-row gap-6">
               <div className="flex-1">
                 <input
@@ -541,10 +732,11 @@ const Home = () => {
               <button
                 type="submit"
                 disabled={isSubmitted}
-                className={`px-10 py-5 rounded-2xl font-bold transition-all duration-500 text-xl ${isSubmitted
-                    ? 'bg-green-500 text-white shadow-2xl scale-105'
-                    : 'bg-gradient-to-r from-[#0595f6] to-blue-500 text-white hover:shadow-2xl hover:scale-110'
-                  }`}
+                className={`px-10 py-5 rounded-2xl font-bold transition-all duration-500 text-xl ${
+                  isSubmitted
+                    ? "bg-green-500 text-white shadow-2xl scale-105"
+                    : "bg-gradient-to-r from-[#0595f6] to-blue-500 text-white hover:shadow-2xl hover:scale-110"
+                }`}
               >
                 {isSubmitted ? (
                   <div className="flex items-center gap-3">
@@ -563,12 +755,17 @@ const Home = () => {
 
           <div className="grid md:grid-cols-3 gap-8 text-center">
             {[
-              { number: '5,000+', label: 'Professionals waiting' },
-              { number: 'Q1 2025', label: 'Expected launch' },
-              { number: '50% OFF', label: 'Early bird pricing' }
+              { number: "5,000+", label: "Professionals waiting" },
+              { number: "Q1 2025", label: "Expected launch" },
+              { number: "50% OFF", label: "Early bird pricing" },
             ].map((item, index) => (
-              <div key={index} className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10 hover:scale-105 transition-all duration-300">
-                <div className="text-4xl font-black text-[#0595f6] mb-3">{item.number}</div>
+              <div
+                key={index}
+                className="bg-white/5 backdrop-blur-sm rounded-3xl p-8 border border-white/10 hover:scale-105 transition-all duration-300"
+              >
+                <div className="text-4xl font-black text-[#0595f6] mb-3">
+                  {item.number}
+                </div>
                 <div className="text-gray-300 text-lg">{item.label}</div>
               </div>
             ))}
