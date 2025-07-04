@@ -96,7 +96,7 @@ const JobApply = () => {
           <div className="flex flex-wrap items-center gap-6 text-gray-600 mb-6">
             <div className="flex items-center gap-2">
               <Briefcase className="w-5 h-5 text-[#0595f6]" />
-              <span className="font-medium text-[#0595f6]">JobsForce.Ai</span>
+              <span className="font-medium text-[#0595f6]">Jobsforce.Ai</span>
             </div>
             <div className="flex items-center gap-2">
               <MapPin className="w-5 h-5 text-gray-600" />
@@ -281,7 +281,7 @@ const JobApply = () => {
               Disclaimer
             </h2>
             <p className="text-gray-700 mb-6">
-              We consider your profile data and your primary resume on JobsForce
+              We consider your profile data and your primary resume on Jobsforce
               for this application. If you want to update your details or upload
               a different resume, please do so before proceeding.
             </p>

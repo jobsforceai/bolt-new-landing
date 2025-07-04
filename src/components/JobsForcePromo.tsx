@@ -29,7 +29,7 @@ import {
   Headphones,
 } from "lucide-react";
 
-const JobsForcePromo = () => {
+const JobsforcePromo = () => {
   const [activeTab, setActiveTab] = useState("extension");
   const [jobCount, setJobCount] = useState(50);
   const extensionPrice = 29;
@@ -43,7 +43,6 @@ const JobsForcePromo = () => {
     { id: "extension", label: "Extension", shortLabel: "Chrome", icon: Chrome },
     { id: "agent", label: "Agent", shortLabel: "Human", icon: Users },
     { id: "features", label: "Features", shortLabel: "Features", icon: Star },
-    { id: "success", label: "Success", shortLabel: "Stories", icon: Award },
   ];
 
   return (
@@ -377,112 +376,11 @@ const JobsForcePromo = () => {
             ))}
           </div>
         )}
-
-        {activeTab === "success" && (
-          <div className="space-y-8 sm:space-y-12">
-            <div className="text-center mb-8 sm:mb-12">
-              <h3 className="text-2xl sm:text-4xl font-black text-slate-900 mb-4">
-                Success Stories
-              </h3>
-              <p className="text-base sm:text-xl text-slate-600 max-w-3xl mx-auto">
-                See how JobsForce has transformed careers and helped thousands
-                land their dream jobs
-              </p>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-              {[
-                {
-                  name: "Sarah Chen",
-                  role: "Software Engineer",
-                  company: "Google",
-                  increase: "40%",
-                  time: "2 weeks",
-                  avatar: "👩‍💻",
-                },
-                {
-                  name: "Michael Rodriguez",
-                  role: "Product Manager",
-                  company: "Microsoft",
-                  increase: "65%",
-                  time: "3 weeks",
-                  avatar: "👨‍💼",
-                },
-                {
-                  name: "Emily Johnson",
-                  role: "Data Scientist",
-                  company: "Netflix",
-                  increase: "55%",
-                  time: "1 week",
-                  avatar: "👩‍🔬",
-                },
-              ].map((story, index) => (
-                <div
-                  key={index}
-                  className="bg-white rounded-3xl p-6 sm:p-8 shadow-xl border border-slate-200 hover:shadow-2xl transition-all duration-300"
-                >
-                  <div className="text-center mb-6">
-                    <div className="text-5xl sm:text-6xl mb-4">{story.avatar}</div>
-                    <h4 className="text-xl sm:text-2xl font-bold text-slate-900 mb-2">
-                      {story.name}
-                    </h4>
-                    <p className="text-base sm:text-lg text-slate-600 mb-1">{story.role}</p>
-                    <p className="text-cyan-500 font-bold text-lg sm:text-xl">
-                      {story.company}
-                    </p>
-                  </div>
-
-                  <div className="bg-gradient-to-r from-cyan-50 to-blue-50 rounded-2xl p-4 sm:p-6 mb-6">
-                    <div className="grid grid-cols-2 gap-4 text-center">
-                      <div>
-                        <div className="text-2xl sm:text-3xl font-black text-cyan-500 mb-1">
-                          {story.increase}
-                        </div>
-                        <div className="text-xs sm:text-sm text-slate-600">
-                          Salary Increase
-                        </div>
-                      </div>
-                      <div>
-                        <div className="text-2xl sm:text-3xl font-black text-blue-500 mb-1">
-                          {story.time}
-                        </div>
-                        <div className="text-xs sm:text-sm text-slate-600">
-                          Time to Hire
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <p className="text-sm sm:text-base text-slate-600 italic">
-                    "JobsForce completely transformed my job search. The AI
-                    found opportunities I never would have discovered, and the
-                    human agent helped me craft the perfect application
-                    strategy."
-                  </p>
-                </div>
-              ))}
-            </div>
-
-            {/* Call to Action */}
-            <div className="bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-600 rounded-3xl p-8 sm:p-12 text-center text-white">
-              <h3 className="text-2xl sm:text-4xl font-black mb-4">
-                Ready to Transform Your Career?
-              </h3>
-              <p className="text-base sm:text-xl mb-8 opacity-90">
-                Join thousands of professionals who've accelerated their career
-                with JobsForce
-              </p>
-              <button className="bg-white text-slate-900 py-3 sm:py-4 px-8 sm:px-12 rounded-2xl font-bold text-base sm:text-xl hover:shadow-2xl transition-all duration-300 hover:scale-105">
-                Get Started Today
-              </button>
-            </div>
-          </div>
-        )}
       </div>
     </div>
   );
 };
 
-export default JobsForcePromo;
+export default JobsforcePromo;
 
 

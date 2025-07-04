@@ -70,7 +70,7 @@ const Waitlist = () => {
           <p className="text-2xl text-gray-300 mb-16 max-w-4xl mx-auto leading-relaxed">
             Join over 5,000 ambitious professionals who are already getting more
             interviews, landing better jobs, and accelerating their careers with
-            JobsForce.ai
+            Jobsforce.ai
           </p>
 
           <form

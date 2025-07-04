@@ -50,7 +50,7 @@ const Features = () => {
             </h1>
 
             <p className="text-2xl text-gray-600 mb-12 max-w-4xl mx-auto leading-relaxed">
-              Discover the revolutionary features that make JobsForce.ai the
+              Discover the revolutionary features that make Jobsforce.ai the
               most advanced job search platform in the world
             </p>
           </div>

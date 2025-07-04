@@ -43,11 +43,11 @@ const Layout = () => {
               <div className="w-10 h-10  rounded-lg flex items-center justify-center">
                 <img
                   src="./models/logo-blacktext.webp"
-                  alt="JobsForce.ai Logo"
+                  alt="Jobsforce.ai Logo"
                 />
               </div>
               <div className="text-xl font-bold text-gray-900">
-                JobsForce.ai
+                Jobsforce.ai
               </div>
             </Link>
 
@@ -204,7 +204,7 @@ const Layout = () => {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex flex-col md:flex-row items-center space-y-2 md:space-y-0 md:space-x-6">
               <p className="text-gray-400 text-sm">
-                © 2025 JobsForce.ai. All rights reserved.
+                © 2025 Jobsforce.ai. All rights reserved.
               </p>
               <nav className="flex space-x-6">
                 <Link

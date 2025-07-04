@@ -36,7 +36,7 @@ import {
   Lightbulb,
 } from "lucide-react";
 import HomeComponent from "../components/home-component";
-import JobsForcePromo from "../components/JobsForcePromo";
+import JobsforcePromo from "../components/JobsforcePromo";
 
 const Home = () => {
   const [jobCount, setJobCount] = useState(10);
@@ -92,44 +92,44 @@ const Home = () => {
 
         <HomeComponent />
         {/* Enhanced Trust Indicators */}
-        <div className="grid md:grid-cols-4 gap-8 max-w-4xl mx-auto mt-20">
-          {[
-            {
-              icon: Award,
-              label: "10,000+ Applications",
-              color: "text-[#0595f6]",
-            },
-            {
-              icon: TrendingUp,
-              label: "85% Response Rate",
-              color: "text-green-500",
-            },
-            {
-              icon: Users,
-              label: "2,500+ Users Hired",
-              color: "text-blue-500",
-            },
-            {
-              icon: Clock,
-              label: "48hr Avg Response",
-              color: "text-purple-500",
-            },
-          ].map((item, index) => (
-            <div
-              key={index}
-              className="group bg-white/60 backdrop-blur-sm rounded-2xl p-6 border border-gray-500 hover:shadow-xl transition-all duration-300 hover:scale-105"
-            >
-              <item.icon className={`${item.color} mb-3 mx-auto`} size={32} />
-              <div className="font-bold text-center text-gray-900 text-lg">
-                {item.label}
-              </div>
-            </div>
-          ))}
-        </div>
+        <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 md:gap-8 max-w-4xl mx-auto mt-20">
+  {[
+    {
+      icon: Award,
+      label: "10,000+ Applications",
+      color: "text-[#0595f6]",
+    },
+    {
+      icon: TrendingUp,
+      label: "85% Response Rate",
+      color: "text-green-500",
+    },
+    {
+      icon: Users,
+      label: "2,500+ Users Hired",
+      color: "text-blue-500",
+    },
+    {
+      icon: Clock,
+      label: "48hr Avg Response",
+      color: "text-purple-500",
+    },
+  ].map((item, index) => (
+    <div
+      key={index}
+      className="group bg-white/60 backdrop-blur-sm rounded-2xl p-4 sm:p-5 md:p-6 border border-gray-500 hover:shadow-xl transition-all duration-300 hover:scale-105"
+    >
+      <item.icon className={`${item.color} mb-2 sm:mb-3 mx-auto`} size={28} />
+      <div className="font-bold text-center text-gray-900 text-sm sm:text-base md:text-lg">
+        {item.label}
+      </div>
+    </div>
+  ))}
+</div>
       </section>
 
       {/* Revolutionary Service Cards */}
-      <JobsForcePromo />
+      <JobsforcePromo />
 
       {/* Revolutionary Features Section */}
 
@@ -138,7 +138,7 @@ const Home = () => {
       {/* Stats Section */}
       <section className="py-20 bg-gradient-to-r from-[#0595f6]/10 via-blue-50/50 to-purple-50/30">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-4 gap-8 text-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             {[
               {
                 number: "10,000+",
@@ -204,7 +204,7 @@ const Home = () => {
           <p className="text-2xl text-gray-300 mb-16 max-w-4xl mx-auto leading-relaxed">
             Join over 5,000 ambitious professionals who are already getting more
             interviews, landing better jobs, and accelerating their careers with
-            JobsForce.ai
+            Jobsforce.ai
           </p>
 
           <form
