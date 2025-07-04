@@ -36,7 +36,7 @@ import {
   Lightbulb,
 } from "lucide-react";
 import HomeComponent from "../components/home-component";
-import JobsforcePromo from "../components/JobsforcePromo";
+import JobsforcePromo from "../components/JobsForcePromo";
 
 const Home = () => {
   const [jobCount, setJobCount] = useState(10);
