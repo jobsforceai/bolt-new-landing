@@ -74,11 +74,7 @@ const Layout = () => {
 
   return (
     <div className="min-h-screen bg-white relative">
-      {/* Announcement Banner */}
-      
-
-      {/* Professional Header */}
-     {/* Professional Header with Banner */}
+      {/* Professional Header with Banner */}
       <header className="fixed top-0 w-full z-50">
         {/* Announcement Banner */}
         {showBanner && bannerData && (
@@ -253,8 +249,8 @@ const Layout = () => {
         </div>
       </header>
 
-      {/* Main Content */}
-      <main className="relative" style={{ paddingTop: showBanner && bannerData ? '120px' : '68px' }}>
+      {/* Main Content - Fixed padding calculation */}
+      <main className="relative" style={{ paddingTop: showBanner && bannerData ? '45px' : '3px' }}>
         <div className="fixed w-[25rem] h-[25rem] rounded-full bg-[#41E2FF] blur-[250px] bottom-0 translate-x-1/3 translate-y-1/2 right-0"></div>
         <Outlet />
       </main>
